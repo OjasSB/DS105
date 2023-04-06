@@ -1,0 +1,107 @@
+> df <- read.csv('MPs_by_date.csv')
+> reg = lm(pc_diff~day_number, data=df)
+> summary(reg)
+
+Call:
+lm(formula = pc_diff ~ day_number, data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-30.918  -8.745  -1.410   7.397 136.557 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  4.961965   1.488394   3.334 0.000945 ***
+day_number  -0.027457   0.007048  -3.895 0.000117 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 14.19 on 363 degrees of freedom
+Multiple R-squared:  0.04013,	Adjusted R-squared:  0.03748 
+F-statistic: 15.17 on 1 and 363 DF,  p-value: 0.0001167
+
+> reg_num_mp=lm(num_MP~day_number, data=df)
+> summary(reg_num_mp)
+
+Call:
+lm(formula = num_MP ~ day_number, data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-33.800  -9.560  -1.541   8.086 149.285 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 114.744995   1.627120  70.520  < 2e-16 ***
+day_number   -0.030016   0.007705  -3.895 0.000117 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 15.51 on 363 degrees of freedom
+Multiple R-squared:  0.04013,	Adjusted R-squared:  0.03748 
+F-statistic: 15.17 on 1 and 363 DF,  p-value: 0.0001167
+
+> df2 <- read.csv('monthly.csv')
+> mr=lm(count~X, data=df2)
+> summary(mr)
+
+Call:
+lm(formula = count ~ X, data = df2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-337.74  -49.11   59.20   73.04  130.91 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3445.95      86.31  39.926 2.32e-12 ***
+X             -18.61      11.73  -1.587    0.144    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 140.2 on 10 degrees of freedom
+Multiple R-squared:  0.2011,	Adjusted R-squared:  0.1213 
+F-statistic: 2.518 on 1 and 10 DF,  p-value: 0.1436
+
+> mr2=lm(pc_difference~X, data=df2)
+> summary(mr2)
+
+Call:
+lm(formula = pc_difference ~ X, data = df2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.0807 -2.3985 -0.6067  2.7294  4.3581 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)   4.9252     1.9700   2.500   0.0314 *
+X            -0.7472     0.2677  -2.792   0.0191 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.201 on 10 degrees of freedom
+Multiple R-squared:  0.438,	Adjusted R-squared:  0.3818 
+F-statistic: 7.792 on 1 and 10 DF,  p-value: 0.01907
+
+> df2 <- read.csv('monthly.csv')
+> halfyear=lm(pc_difference~half, data=df2)
+> summary(halfyear)
+
+Call:
+lm(formula = pc_difference ~ half, data = df2)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-4.078 -1.193  1.002  1.479  2.042 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   3.4283     0.8834   3.881  0.00305 ** 
+half         -6.7200     1.2493  -5.379  0.00031 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.164 on 10 degrees of freedom
+Multiple R-squared:  0.7432,	Adjusted R-squared:  0.7175 
+F-statistic: 28.94 on 1 and 10 DF,  p-value: 0.0003104
