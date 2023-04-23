@@ -6,7 +6,7 @@ import pandas as pd
 
 # UN Indices Data:
 indices_data=pd.read_csv('../data/UN HDR all indices data.csv')
-indices_data=indices_data[['country','hdi_2021','le_2021','eys_2021','mys_2021','gnipc_2021', 'gdi_2021','ihdi_2021','coef_ineq_2021','region']]
+indices_data=indices_data[['country','hdi_2021','le_2021','eys_2021','mys_2021','gnipc_2021', 'gdi_2021','ihdi_2021','coef_ineq_2021','region', 'gii_2021']]
 
 high_hdi=indices_data[indices_data['hdi_2021']>0.8]['country'].tolist()
 low_hdi=indices_data[indices_data['hdi_2021']<0.7]['country'].tolist()
@@ -14,6 +14,8 @@ low_hdi=indices_data[indices_data['hdi_2021']<0.7]['country'].tolist()
 top_50_mys=indices_data.sort_values(by=['mys_2021'], ascending=False).head(50)['country'].tolist()
 bottom_50_mys=indices_data.sort_values(by=['mys_2021'], ascending=True).head(50)['country'].tolist()
 
+top_gii=indices_data.sort_values(by=['gii_2021'], ascending=False).head(20)['country'].tolist()
+bottom_gii=indices_data.sort_values(by=['gii_2021'], ascending=True).head(20)['country'].tolist()
 #------------------------------------Income groups------------------------------------
 
 # World Bank Data:
@@ -36,3 +38,8 @@ high_dem=vdem_data[vdem_data['electdem_vdem_owid']>0.8]['Entity'].tolist()
 countries=pd.read_csv('../data/countries.csv',encoding='latin-1')
 north_hem=countries[countries['latitude']>0]['name'].tolist()
 south_hem=countries[countries['latitude']<0]['name'].tolist()
+
+#------------------------------------Gender quotas------------------------------------
+
+quotas_df=pd.read_csv('../data/gender_quotas.csv')
+legal_quotas=quotas_df[quotas_df['Voluntary political party quotas']=='No']['Country'].tolist()
