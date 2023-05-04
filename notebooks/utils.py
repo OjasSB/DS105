@@ -16,6 +16,7 @@ bottom_50_mys=indices_data.sort_values(by=['mys_2021'], ascending=True).head(50)
 
 top_gii=indices_data.sort_values(by=['gii_2021'], ascending=False).head(20)['country'].tolist()
 bottom_gii=indices_data.sort_values(by=['gii_2021'], ascending=True).head(20)['country'].tolist()
+
 #------------------------------------Income groups------------------------------------
 
 # World Bank Data:
