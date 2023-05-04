@@ -1,9 +1,25 @@
-# DS105
-Group Project
+# DS105L Group Project
 
-Relative age effect in politics
+## Exploring biographical factors affecting political representation
 
-### Data for all countries stored in data.csv to avoid running code for too long each time
+#### By **DataDemocrats**
+Ojas S. B., Uttarayan D., Isha P., Manya G.
 
-## Data Source
-http://everypolitician.org/
+---
+
+### Data Sources:
+- http://everypolitician.org/
+- Wikipedia (for UK analysis)
+
+---
+### Factors Analyzed:
+- Birth Month & Relative Age Effect
+- Gender
+- First Letter & Length of Name
+- Zodiac (**JOKE**)
+- Day of Birth
+- University Education (UK only)
+- Age (UK only)
+
+---
+
