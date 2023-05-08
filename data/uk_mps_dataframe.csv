@@ -17,7 +17,7 @@ Daisy Cooper,1981-10-29,Deputy Leader of the Liberal Democrats,University of Lee
 Jonathan Djanogly,1965-06-03,Conservative,,57.9
 Nadine Dorries,1957-05-21,Conservative,,66.0
 Oliver Dowden,1978-08-01,Chairman of the Conservative Party,"Trinity Hall, Cambridge",44.8
-Jackie Doyle-Price,1969-08-05,Conservative,University College,53.7
+Jackie Doyle-Price,1969-08-05,Conservative,University College,53.8
 James Duddridge,1971-08-26,Conservative,University of Essex,51.7
 Annalissa Firth,,Conservative,Durham University,
 Vicky Ford,1967-09-21,Conservative,"Trinity College, Cambridge",55.6
@@ -34,7 +34,7 @@ Tom Hunt,1988-08-31,Conservative,"Ely, Cambridgeshire",34.7
 Bernard Jenkin,1959-04-09,Deputy Chairman of the Conservative Party,"Corpus Christi College, Cambridge",64.1
 Eleanor Laing,1958-02-01,Conservative,University of Edinburgh,65.3
 Brandon Lewis,1971-06-20,Chairman of the Conservative Party,University of Buckingham,51.9
-Clive Lewis,1971-09-11,Labour,University of Bradford,51.6
+Clive Lewis,1971-09-11,Labour,University of Bradford,51.7
 Julie Marson,1965-03-23,Conservative,,58.1
 Jerome Mayhew,1970-04-11,Conservative,University of Edinburgh,53.1
 Stephen McPartland,1976-08-09,Conservative,University of Liverpool,46.7
@@ -51,7 +51,7 @@ Grant Shapps,1968-09-14,Chairman of the Conservative Party,Manchester Metropolit
 Chloe Smith,1982-05-17,Conservative,University of York,41.0
 Liz Truss,1975-07-26,Leader of the Conservative Party,"Merton College, Oxford",47.8
 Shailesh Vara,1960-09-04,Conservative,Brunel University,62.7
-Charles Walker,1967-09-11,Conservative,University of Oregon,55.6
+Charles Walker,1967-09-11,Conservative,University of Oregon,55.7
 Giles Watling,1953-02-18,Conservative,,70.2
 John Whittingdale,1959-10-16,Conservative,University College London,63.6
 James Wild,1977-01-05,Conservative,Queen Mary University of London,46.3
@@ -62,7 +62,7 @@ Edward Argar,1977-12-09,Conservative,"Oriel College, Oxford",45.4
 Jonathan Ashworth,1978-10-14,National Executive Committee,Durham University,44.6
 Victoria Atkins,1976-03-22,Conservative,"Corpus Christi College,Cambridge",47.1
 Margaret Beckett,1943-01-15,John Smith,University of Manchester Institute of Science and Technology,80.3
-Peter Bone,1952-10-19,Conservative,,70.5
+Peter Bone,1952-10-19,Conservative,,70.6
 Ben Bradley,1989-12-11,Vice Chairman of the Conservative Party for Youth,Nottingham Trent University,33.4
 Andrew Bridgen,1964-10-28,David Taylor,University of Nottingham,58.5
 Brendan Clarke-Smith,1980-08-17,Conservative,Nottingham Trent University,42.7
@@ -80,7 +80,7 @@ Darren Henry,1968-08-04,Conservative,University of Lincoln,54.8
 Philip Hollobone,1964-11-07,Conservative,"Lady Margaret Hall, Oxford",58.5
 Jane Hunt,1966-06-04,"Parliamentary Under-Secretary of State for Small Business, Consumers and Labour Markets",,56.9
 Robert Jenrick,1982-01-09,Conservative,"St John's College, Cambridge",41.3
-Caroline Johnson,1977-12-31,Conservative,Newcastle University,45.3
+Caroline Johnson,1977-12-31,Conservative,Newcastle University,45.4
 Alicia Kearns,1987-11-11,Conservative,"Fitzwilliam College, Cambridge",35.5
 Liz Kendall,1971-06-11,Labour,"Queens' College, Cambridge",51.9
 Robert Largan,1987-05-29,Conservative,University of Manchester,35.9
@@ -90,11 +90,11 @@ Edward Leigh,1950-07-20,Conservative,"University College, Durham",72.8
 Andrew Lewer,1971-07-18,Conservative,Newcastle University,51.8
 Karl McCartney,1968-10-25,Conservative,"University of Wales, Lampeter",54.5
 Nigel Mills,,Conservative,Newcastle University,
-Alex Norris,1984-02-04,Labour,University of Nottingham,39.2
+Alex Norris,1984-02-04,Labour,University of Nottingham,39.3
 Neil O'Brien,1978-11-06,Conservative,"Christ Church, Oxford",44.5
 Toby Perkins,1970-08-12,Labour,,52.7
 Tom Pursglove,1988-11-05,Vice Chairman of the Conservative Party for Youth,Queen Mary University of London,34.5
-Lee Rowley,1980-09-11,Deputy Chairman of the Conservative Party,"Lincoln College, Oxford",42.6
+Lee Rowley,1980-09-11,Deputy Chairman of the Conservative Party,"Lincoln College, Oxford",42.7
 Tom Randall,1981-07-04,Conservative,University of Oxford,41.8
 Amanda Solloway,1961-06-06,Conservative,,61.9
 Mark Spencer,1970-01-20,Chief Whip of the House of Commons,,53.3
@@ -104,12 +104,12 @@ Claudia Webbe,1965-03-08,Independent,De Montfort University,58.2
 Heather Wheeler,1959-05-14,Conservative,,64.0
 Nadia Whittome,1996-08-29,Labour,,26.7
 Diane Abbott,1953-09-27,Labour Party,"Newnham College, Cambridge",69.6
-Nickie Aiken,1969-02-04,Conservative,University of Exeter,54.2
-Rushanara Ali,1975-03-14,Labour,St. John’s College,48.1
+Nickie Aiken,1969-02-04,Conservative,University of Exeter,54.3
+Rushanara Ali,1975-03-14,Labour,St. John’s College,48.2
 Rosena Allin-Khan,1978-05-10,Labour,Brunel University,45.0
-Fleur Anderson,1971-02-06,Labour,University of York,52.2
+Fleur Anderson,1971-02-06,Labour,University of York,52.3
 Gareth Bacon,1972-04-07,Leader of the Conservative Party,University of Kent,51.1
-Apsana Begum,1990-05-25,Labour,Queen Mary University of London,32.9
+Apsana Begum,1990-05-25,Labour,Queen Mary University of London,33.0
 Bob Blackman,1956-04-26,Conservative,University of Liverpool,67.0
 Lyn Brown,1960-04-13,Labour,University of Roehampton,63.1
 Felicity Buchan,,Conservative,"Christ Church, Oxford",
@@ -118,9 +118,9 @@ Dawn Butler,1969-11-03,Labour,,53.5
 Ruth Cadbury,1959-05-14,Labour,University of Salford,64.0
 Bambos Charalambous,1967-12-02,Labour,Liverpool John Moores University,55.4
 Feryal Clark,1979-01-06,Labour,,44.3
-Elliot Colburn,1992-08-06,Conservative,Aberystwyth University,30.7
-Jeremy Corbyn,1949-05-26,Leader of the Labour Party,North London Polytechnic,73.9
-Neil Coyle,1978-12-30,Labour,University of Hull,44.3
+Elliot Colburn,1992-08-06,Conservative,Aberystwyth University,30.8
+Jeremy Corbyn,1949-05-26,Leader of the Labour Party,North London Polytechnic,74.0
+Neil Coyle,1978-12-30,Labour,University of Hull,44.4
 Stella Creasy,1977-04-05,Labour and Co-operative,University of Cambridge,46.1
 Jon Cruddas,1962-04-07,Labour Party,University of Warwick,61.1
 John Cryer,1964-04-11,Parliamentary Labour Party,University of Hertfordshire,59.1
@@ -135,7 +135,7 @@ Vicky Foxcroft,1977-03-09,Labour,De Montfort University,46.2
 Mike Freer,1960-05-29,Conservative,,62.9
 Louie French,1988-02-14,Conservative,,35.2
 Barry Gardiner,1957-03-10,Labour,University of St Andrews,66.2
-Stephen Hammond,1962-02-04,Conservative Party,Queen Mary University of London,61.2
+Stephen Hammond,1962-02-04,Conservative Party,Queen Mary University of London,61.3
 Greg Hands,1965-11-14,Chairman of the Conservative Party,"Robinson College, Cambridge",57.5
 Harriet Harman,1950-07-30,Deputy Leader of the Labour Party,University of York,72.8
 Helen Hayes,1974-08-08,Labour,"Balliol College, Oxford",48.7
@@ -146,7 +146,7 @@ Boris Johnson,1964-06-19,Leader of the Conservative Party,"Balliol College, Oxfo
 Sarah Jones,1972-12-20,Labour,University of Durham,50.4
 David Lammy,1972-07-19,Labour,SOAS University of London,50.8
 Julia Lopez,,Conservative,"Queens' College, Cambridge",
-Seema Malhotra,1972-08-07,Labour Co-operative,University of Warwick,50.7
+Seema Malhotra,1972-08-07,Labour Co-operative,University of Warwick,50.8
 Siobhain McDonagh,1960-02-20,Labour,University of Essex,63.2
 John McDonnell,1951-09-08,Labour,Brunel University,71.7
 James Murray,1983-07-13,Labour and Co-operative,"Wadham College, Oxford",39.8
@@ -195,7 +195,7 @@ Emma Lewell-Buck,1978-11-08,Labour,Northumbria University,44.5
 Andy McDonald,1958-03-08,Labour,Leeds Polytechnic,65.2
 Catherine McKinnell,1976-06-08,Doug Henderson,University of Edinburgh,46.9
 Ian Mearns,1957-04-21,Labour,,66.0
-Grahame Morris,1961-03-13,Labour,Newcastle Polytechnic,62.1
+Grahame Morris,1961-03-13,Labour,Newcastle Polytechnic,62.2
 Jill Mortimer,1965-03-20,Conservative,Teesside University,58.1
 Chi Onwurah,1965-04-12,Labour,Imperial College London,58.1
 Guy Opperman,1965-05-18,Conservative,University of Buckingham,58.0
@@ -208,7 +208,7 @@ Jacob Young,1993-02-02,Conservative,Teesside University,30.3
 Debbie Abrahams,1960-09-15,Labour,University of Salford,62.6
 Mike Amesbury,1969-05-07,Labour,Bradford University,54.0
 Paula Barker,1972-05-09,Labour,,51.0
-Scott Benton,1987-07-01,Independent,University of Nottingham,35.8
+Scott Benton,1987-07-01,Independent,University of Nottingham,35.9
 Jake Berry,1978-12-29,Chairman of the Conservative Party,University of Sheffield,44.4
 Graham Brady,1967-05-20,Conservative,Durham University,56.0
 Sara Britcliffe,1995-02-21,Vice Chairman of the Conservative Party for Youth,University of Manchester,28.2
@@ -230,10 +230,10 @@ Simon Fell,1981-02-09,Conservative,University of Warwick,42.2
 Katherine Fletcher,1976-02-18,Conservative,University of Nottingham,47.2
 Yvonne Fovargue,1956-11-29,Labour,University of Leeds,66.4
 Chris Green,1973-08-12,Conservative,,49.7
-Margaret Greenwood,1959-03-14,Labour,,64.1
+Margaret Greenwood,1959-03-14,Labour,,64.2
 James Grundy,1978-12-08,Conservative,,44.4
 Andrew Gwynne,1974-06-04,Labour Party Co-National Campaign Coordinator,Wrexham Glyndŵr University,48.9
-Trudy Harrison,1976-04-19,Conservative,University of Salford,47.0
+Trudy Harrison,1976-04-19,Conservative,University of Salford,47.1
 Antony Higginbotham,1989-12-16,Conservative,University of Hull,33.4
 Mark Hendrick,1958-11-02,Labour Co-op,Liverpool John Moores University,64.5
 Kate Hollern,1955-04-12,Labour,,68.1
@@ -251,7 +251,7 @@ Rebecca Long-Bailey,1979-09-22,Labour,Manchester Metropolitan University,43.6
 Justin Madders,1972-11-22,Labour,University of Sheffield,50.5
 Paul Maynard,1975-12-16,Conservative,"University College, Oxford",47.4
 Conor McGinn,1984-07-31,Labour Party Deputy National Campaign Coordinator,London Metropolitan University,38.8
-Alison McGovern,1980-12-30,Labour,University College London,42.3
+Alison McGovern,1980-12-30,Labour,University College London,42.4
 Jim McMahon,1980-07-07,Co-operative Party,,42.8
 Esther McVey,1967-10-24,Conservative,"Queen Mary, University of London",55.5
 Mark Menzies,1971-05-18,Conservative,University of Glasgow,52.0
@@ -288,10 +288,10 @@ Crispin Blunt,1960-07-15,Conservative,"University College, Durham",62.8
 Peter Bottomley,1944-07-30,Conservative,"Trinity College, Cambridge",78.8
 Steve Brine,1974-01-28,Conservative,Liverpool Hope University,49.3
 Rob Butler,1967-06-19,Conservative,University of Sheffield,55.9
-Maria Caulfield,1973-08-06,Vice Chairman of the Conservative Party for Women,,49.7
+Maria Caulfield,1973-08-06,Vice Chairman of the Conservative Party for Women,,49.8
 Rehman Chishti,1978-10-04,Conservative Party,Aberystwyth University,44.6
 Greg Clark,1967-08-28,Conservative,"Magdalene College, Cambridge",55.7
-Damian Collins,1974-02-04,Conservative,"St Benet's Hall, Oxford",49.2
+Damian Collins,1974-02-04,Conservative,"St Benet's Hall, Oxford",49.3
 Robert Courts,1978-10-21,Conservative,University of Sheffield,44.5
 Claire Coutinho,1985-07-08,Conservative,"Exeter College, Oxford",37.8
 Tracey Crouch,1975-07-24,Conservative,University of Hull,47.8
@@ -301,7 +301,7 @@ The Lady Lancaster of Kimbolton,1971-10-28,Conservative,Swansea University,51.5
 Leo Docherty,1976-10-04,Conservative,"SOAS, University of London",46.6
 Anneliese Dodds,1978-03-16,Chair of the Labour Party,"St. Hilda's College, Oxford",45.1
 Flick Drummond,1962-06-16,Conservative,University of Hull,60.9
-Rosie Duffield,1971-07-01,Chief Whip,,51.8
+Rosie Duffield,1971-07-01,Chief Whip,,51.9
 Natalie Elphicke,1970-11-05,Conservative,University of Kent,52.5
 Ben Everitt,1979-11-22,Conservative,,43.5
 Laura Farris,1978-06-13,Conservative,"Lady Margaret Hall, Oxford",44.9
@@ -325,8 +325,8 @@ Jeremy Hunt,1966-11-01,Conservative,"Magdalen College, Oxford",56.5
 Ranil Jayawardena,1986-09-03,Deputy Chairman of the Conservative Party,London School of Economics,36.7
 Gareth Johnson,1969-10-12,Conservative,The College of Law,53.6
 David Johnston,1981-11-27,Conservative,"Balliol College, Oxford",41.4
-Gillian Keegan,1968-03-13,Conservative,Liverpool John Moores University,55.1
-Kwasi Kwarteng,1975-05-26,Conservative,"Trinity College, Cambridge",47.9
+Gillian Keegan,1968-03-13,Conservative,Liverpool John Moores University,55.2
+Kwasi Kwarteng,1975-05-26,Conservative,"Trinity College, Cambridge",48.0
 Peter Kyle,1970-09-09,Labour,University of Sussex,52.7
 Julian Lewis,1951-09-26,Conservative,"Balliol College, Oxford",71.6
 Jonathan Lord,1962-09-17,Conservative,"Merton College, Oxford",60.6
@@ -338,7 +338,7 @@ Kit Malthouse,1966-10-27,Conservative,Newcastle University,56.5
 Theresa May,1956-10-01,Leader of the Conservative Party,"St Hugh's College, Oxford",66.6
 Huw Merriman,1973-07-13,Conservative,"University College, University of Durham",49.8
 Maria Miller,1964-03-26,Conservative,London School of Economics,59.1
-Layla Moran,1982-09-12,Liberal Democrats,Imperial College London,40.6
+Layla Moran,1982-09-12,Liberal Democrats,Imperial College London,40.7
 Penny Mordaunt,1973-03-04,Conservative,University of Reading,50.2
 Stephen Morgan,1981-01-17,Labour,University of Bristol,42.3
 Joy Morrissey,1981-01-30,Conservative,London School of Economics,42.3
@@ -379,7 +379,7 @@ Richard Drax,1958-01-29,Conservative,Royal Agricultural College,65.3
 Tobias Ellwood,1966-08-12,Conservative,Loughborough University,56.7
 George Eustice,1971-09-28,Conservative,,51.6
 Richard Foord,1978-02-13,Liberal Democrats,"Royal Holloway, University of London",45.2
-Kevin Foster,1978-12-31,Conservative,University of Warwick,44.3
+Kevin Foster,1978-12-31,Conservative,University of Warwick,44.4
 Liam Fox,1961-09-22,Chairman of the Conservative Party,University of Glasgow,61.6
 Marcus Fysh,1970-11-08,Conservative,"Corpus Christi College, Oxford",52.5
 John Glen,1974-04-01,Richard Fuller,"Mansfield College, Oxford",49.1
@@ -407,9 +407,9 @@ Andrew Murrison,1961-04-24,Conservative,University of Bristol,62.0
 John Penrose,1964-06-22,Conservative,"Downing College, Cambridge",58.9
 Luke Pollard,1980-04-10,Labour and Co-operative,University of Exeter,43.1
 Rebecca Pow,1960-10-10,Conservative,,62.6
-Jacob Rees-Mogg,1969-05-24,Party Leader,"Trinity College, Oxford",53.9
+Jacob Rees-Mogg,1969-05-24,Party Leader,"Trinity College, Oxford",54.0
 Laurence Robertson,1958-03-29,Conservative,Bolton Institute of Higher Education,65.1
-Selaine Saxby,1970-11-25,Conservative,"Magdalene College, Cambridge",52.4
+Selaine Saxby,1970-11-25,Conservative,"Magdalene College, Cambridge",52.5
 Chris Skidmore,1981-05-17,Conservative,"Christ Church, Oxford",42.0
 Karin Smyth,1964-09-08,Labour,University of East Anglia,58.7
 Gary Streeter,1955-10-02,Conservative,,67.6
@@ -426,7 +426,7 @@ Shaun Bailey,1992-07-22,Conservative,Aberystwyth University,30.8
 Harriett Baldwin,1960-05-02,Conservative,"Lady Margaret Hall, Oxford",63.0
 Aaron Bell,1980-02-25,Conservative,"St. John's College, Oxford",43.2
 Saqib Bhatti,1985-06-18,Vice Chairman of the Conservative Party for Business,London School of Economics and Political Science,37.9
-Karen Bradley,1970-03-12,Conservative,Imperial College London,53.1
+Karen Bradley,1970-03-12,Conservative,Imperial College London,53.2
 Jack Brereton,1991-05-13,Conservative,Keele University,32.0
 Liam Byrne,1970-10-02,Labour,University of Manchester,52.6
 Bill Cash,1940-05-10,Conservative,"Lincoln College, Oxford",83.0
@@ -434,7 +434,7 @@ Theo Clarke,1985-08-04,Conservative,Newcastle University,37.8
 Paulette Hamilton,,John Clancy,,
 Philip Dunne,1958-08-14,Conservative,"Keble College, Oxford",64.7
 Michael Fabricant,1950-06-12,Conservative,Loughborough University,72.9
-Colleen Fletcher,1954-11-23,Labour,,68.4
+Colleen Fletcher,1954-11-23,Labour,,68.5
 Mark Garnier,1963-02-26,Conservative,,60.2
 Jo Gideon,1952-11-07,Conservative,University of Birmingham,70.5
 Preet Gill,1972-11-21,Labour Co-op,University of East London,50.5
@@ -455,7 +455,7 @@ Pat McFadden,1965-03-26,Labour,University of Edinburgh,58.1
 Amanda Milling,1975-03-12,Chairman of the Conservative Party,University College London,48.2
 Andrew Mitchell,1956-03-23,Conservative,"Jesus College, Cambridge",67.1
 Helen Morgan,1975-04-09,Liberal Democrats,"Trinity College, Cambridge",48.1
-James Morris,1967-02-04,Conservative,University of Birmingham,56.2
+James Morris,1967-02-04,Conservative,University of Birmingham,56.3
 Wendy Morton,1967-11-09,Chief Whip of the House of Commons,Open University,55.5
 Jesse Norman,1962-06-23,Conservative,"Merton College, Oxford",60.9
 Taiwo Owatemi,1992-07-22,Labour,University of Kent,30.8
@@ -471,7 +471,7 @@ Zarah Sultana,1993-10-31,Labour,University of Birmingham,29.5
 Craig Tracey,1974-08-21,Conservative,,48.7
 Valerie Vaz,1954-12-07,Labour,University of London,68.4
 Robin Walker,1978-04-12,Conservative,"Balliol College, Oxford",45.1
-Suzanne Webb,1966-02-04,Conservative,,57.2
+Suzanne Webb,1966-02-04,Conservative,,57.3
 Matt Western,1962-11-07,Labour,University of Bristol,60.5
 Bill Wiggin,1966-06-04,Conservative,Bangor University,56.9
 Gavin Williamson,1976-06-25,Chief Whip of the House of Commons,University of Bradford,46.9
@@ -479,7 +479,7 @@ Mike Wood,1976-03-17,Conservative,Aberystwyth University,47.1
 Jeremy Wright,1972-10-24,Conservative,University of Exeter,50.5
 Nadhim Zahawi,1967-06-02,Chairman of the Conservative Party,University College London,55.9
 Nigel Adams,1966-11-30,Conservative,,56.4
-Stuart Andrew,1971-11-25,Conservative,,51.4
+Stuart Andrew,1971-11-25,Conservative,,51.5
 Hilary Benn,1953-11-26,Labour,University of Sussex,69.4
 Clive Betts,1950-01-13,Labour,"Pembroke College, Cambridge",73.3
 Olivia Blake,1990-03-10,Labour,University of Sheffield,33.2
@@ -491,10 +491,10 @@ Yvette Cooper,1969-03-20,Labour,"Balliol College, Oxford",54.1
 Judith Cummins,1967-06-26,Labour,University of Leeds,55.9
 Philip Davies,1972-01-05,Conservative,University of Huddersfield,51.3
 David Davis,1948-12-23,Chairman of the Conservative Party,University of Warwick,74.4
-Mark Eastwood,1971-03-14,Conservative,,52.1
+Mark Eastwood,1971-03-14,Conservative,,52.2
 Nick Fletcher,1972-07-15,Conservative,,50.8
-Gill Furniss,1957-03-14,Labour,Leeds Beckett University,66.1
-Robert Goodwill,1956-12-31,Geraint Davies,Newcastle University,66.3
+Gill Furniss,1957-03-14,Labour,Leeds Beckett University,66.2
+Robert Goodwill,1956-12-31,Geraint Davies,Newcastle University,66.4
 Louise Haigh,1987-07-22,Labour,University of Nottingham,35.8
 Fabian Hamilton,1955-04-12,Labour,University of York,68.1
 Emma Hardy,1979-07-17,Labour,University of Liverpool,43.8
@@ -526,9 +526,9 @@ Alexander Stafford,1987-07-19,Vice Chairman of the Conservative Party for Policy
 Graham Stuart,1962-03-12,Neil Carmichael,"Selwyn College, Cambridge",61.2
 Julian Sturdy,1971-06-03,Conservative,Harper Adams University,51.9
 Rishi Sunak,1980-05-12,Leader of the Conservative Party,"Lincoln College, Oxford",43.0
-Jon Trickett,1950-07-02,Labour Party National Campaign Coordinator,University of Hull,72.8
+Jon Trickett,1950-07-02,Labour Party National Campaign Coordinator,University of Hull,72.9
 Karl Turner,1971-04-15,Labour,University of Hull,52.1
-Martin Vickers,1950-09-13,Conservative,University of Lincoln,72.6
+Martin Vickers,1950-09-13,Conservative,University of Lincoln,72.7
 Craig Whittaker,1962-08-30,Conservative,,60.7
 Rosie Winterton,1958-08-10,Labour,University of Hull,64.7
 Tonia Antoniazzi,1971-10-05,Labour,University of Exeter,51.6
@@ -539,7 +539,7 @@ Chris Bryant,1962-01-11,Labour,"Mansfield College, Oxford",61.3
 Alun Cairns,1970-07-30,Conservative,"University of Wales, Newport",52.8
 Stephen Crabb,1973-01-20,Welsh Conservative,University of Bristol,50.3
 Virginia Crosbie,1966-12-08,Conservative,Queen Mary University of London,56.4
-Wayne David,1957-07-01,European Parliamentary Labour Party,Cardiff University,65.8
+Wayne David,1957-07-01,European Parliamentary Labour Party,Cardiff University,65.9
 David TC Davies,1970-07-27,Conservative,,52.8
 Geraint Davies,1960-05-03,Labour Co-op,"Jesus College, Oxford",63.0
 James Davies,1980-02-27,Conservative,"Christ's College, Cambridge",43.2
@@ -566,13 +566,13 @@ Liz Saville Roberts,1964-12-16,Plaid Cymru,Aberystwyth University,58.4
 Nick Smith,1960-01-14,Labour,"Birkbeck, University of London",63.3
 Jo Stevens,1966-09-06,Labour,University of Manchester,56.7
 Mark Tami,1962-10-03,Labour,"University of Wales, Swansea",60.6
-Nick Thomas-Symonds,1980-05-26,Labour,"St Edmund Hall, Oxford",42.9
+Nick Thomas-Symonds,1980-05-26,Labour,"St Edmund Hall, Oxford",43.0
 Jamie Wallis,1984-06-02,Conservative,"Christ Church, Oxford",38.9
 Craig Williams,1985-06-07,Conservative,,37.9
 Hywel Williams,,Plaid Cymru,Cardiff University,
 Beth Winter,1974-10-04,Welsh Labour,University of Bristol,48.6
 Hannah Bardell,1983-06-01,Scottish National Party,University of Stirling,39.9
-Mhairi Black,1994-09-12,Scottish National Party,University of Glasgow,28.6
+Mhairi Black,1994-09-12,Scottish National Party,University of Glasgow,28.7
 Ian Blackford,1961-05-14,Scottish National Party,,62.0
 Kirsty Blackman,1986-03-20,SNP,,37.1
 Steven Bonnar,1981-08-27,Scottish National Party,,41.7
@@ -596,13 +596,13 @@ Marion Fellows,1949-05-05,SNP,Heriot-Watt University,74.0
 Margaret Ferrier,1960-09-10,Independent,,62.7
 Stephen Flynn,1988-10-13,Scottish National Party,University of Dundee,34.6
 Patricia Gibson,1968-05-12,SNP,University of Glasgow,55.0
-Patrick Grady,1980-02-05,Chief Whip of the Scottish National Party,University of Strathclyde,43.2
+Patrick Grady,1980-02-05,Chief Whip of the Scottish National Party,University of Strathclyde,43.3
 Peter Grant,1960-10-12,Scottish National Party,,62.6
 Neale Hanvey,1964-12-28,Alba Party,City University,58.4
 Drew Hendry,1964-05-31,Scottish National Party,,58.9
 Stewart Hosie,1963-01-03,SNP,Abertay University,60.3
 Alister Jack,1963-07-07,Conservative,Heriot-Watt University,59.8
-Christine Jardine,1960-11-24,Liberal Democrats,University of Glasgow,62.4
+Christine Jardine,1960-11-24,Liberal Democrats,University of Glasgow,62.5
 John Lamont,1976-04-15,Scottish Conservatives,University of Glasgow,47.1
 Chris Law,1969-10-21,Scottish National Party,University of St Andrews,53.5
 David Linden,1990-05-14,Scottish National Party,,33.0
@@ -619,13 +619,13 @@ Gavin Newlands,1980-02-02,Scottish National Party,,43.3
 John Nicolson,1961-06-23,Scottish National Party,University of Glasgow,61.9
 Brendan O'Hara,1963-04-27,Scottish National Party,University of Strathclyde,60.0
 Kirsten Oswald,1972-12-21,Scottish National Party,University of Glasgow,50.4
-Anum Qaisar,1992-09-11,SNP,University of Stirling,30.6
+Anum Qaisar,1992-09-11,SNP,University of Stirling,30.7
 Douglas Ross,1983-01-27,Leader of the Scottish Conservative Party,,40.3
 Tommy Sheppard,1959-03-06,Scottish National Party,University of Aberdeen,64.2
 Alyn Smith,1973-09-15,Scottish National Party,University of Leeds,49.6
 Chris Stephens,1973-03-20,Scottish National Party,,50.1
 Jamie Stone,1954-06-16,Liberal Democrats,University of St Andrews,68.9
-Alison Thewliss,1982-09-13,Scottish National Party,University of Aberdeen,40.6
+Alison Thewliss,1982-09-13,Scottish National Party,University of Aberdeen,40.7
 Owen Thompson,1978-03-17,Chief Whip of the Scottish National Party,Edinburgh Napier University,45.1
 Richard Thomson,1976-06-16,Scottish National Party,University of Stirling,46.9
 Philippa Whitford,1958-12-24,Scottish National Party,University of Glasgow,64.4
