@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>DataDemocrats - Exploring University</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DataDemocrats</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-contents" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Contents</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-contents">    
+        <li>
+    <a class="dropdown-item" href="./Untitled-1.html" rel="" target="">
+ <span class="dropdown-text">The Overall Process</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./analysis-process.html" rel="" target="">
+ <span class="dropdown-text">Analysis Process</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./data_coll.html" rel="" target="">
+ <span class="dropdown-text">Data Collection and Cleaning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./birth_month.html" rel="" target="">
+ <span class="dropdown-text">Exploring Birth Month</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./day_birth.html" rel="" target="">
+ <span class="dropdown-text">Exploring First letter of a name</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./uk-analysis1.html" rel="" target="">
+ <span class="dropdown-text">Exploring University</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./gender.html" rel="" target="">
+ <span class="dropdown-text">Exploring Gender</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./zodiac.html" rel="" target="">
+ <span class="dropdown-text">Exploring Zodiac</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./final_comms.html" rel="" target="">
+ <span class="dropdown-text">Final Comments</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#wales" id="toc-wales" class="nav-link active" data-scroll-target="#wales">Wales</a></li>
+  <li><a href="#scotland" id="toc-scotland" class="nav-link" data-scroll-target="#scotland">Scotland</a></li>
+  <li><a href="#northern-ireland" id="toc-northern-ireland" class="nav-link" data-scroll-target="#northern-ireland">Northern Ireland</a></li>
+  <li><a href="#extracting-information-for-uk-focused-analysis" id="toc-extracting-information-for-uk-focused-analysis" class="nav-link" data-scroll-target="#extracting-information-for-uk-focused-analysis">Extracting information for UK-focused analysis</a></li>
+  <li><a href="#uk-data-visualisations-and-analysis" id="toc-uk-data-visualisations-and-analysis" class="nav-link" data-scroll-target="#uk-data-visualisations-and-analysis">UK Data Visualisations and Analysis</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Exploring University</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="cell" data-execution_count="26">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> bs4 <span class="im">import</span> BeautifulSoup</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> <span class="op">*</span> </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>sns.set_theme(<span class="st">"talk"</span>, <span class="st">"whitegrid"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>We now want to explore how the university the indivdual went to may affect their chances of becoming a politican.</p>
+<p>
+We wanted to explore different paths that affect an individual’s chance of becoming a politician as such there may be a selection bias that those who went to a particular university are more likley to become politicians.
+</p>
+<p>
+This also could have certain implications for policy-makers - to increase the quantity and quality of politicians.
+</p>
+However, we found some issues in trying to compare our population data and the universities they attened. For example, many developing countries had incomplete and messy data, meaning that we could not compare education across countries. This is highlighted in the table below:<br>
+
+
+<table border="1">
+<caption>
+Comparing Data Types with UK and a developing country
+</caption>
+<tbody><tr>
+<td>
+Row 1, col 1 item
+</td>
+<td>
+Row 1, col 2 item
+</td>
+<td>
+Row 1, col 3 item
+</td>
+</tr>
+<tr>
+<td>
+Row 2, col 1 item
+</td>
+<td>
+Row 2, col 2 item
+</td>
+<td>
+Row 2, col 3 item
+</td>
+</tr>
+
+</tbody></table>
+<p>There was a clear trend between going to Oxbridge and being a politician in the UK which is validated by the university and number of MP’s percentage table.</p>
+<p>
+On this page we show a visualisation of the table exhibits how two to three times more MP’s attend Oxford and Cambridge than other top 10 universities. A substantially high number of politicians also attend LSE.
+</p>
+<p>
+This might be explained by the extensive political networks, influential alumni, and enhanced perceived competence gained from attending prestigious universities like Oxford, Cambridge, or LSE which positively influence the likelihood of becoming a politician.
+</p>
+<p>
+A Times Higher article based on testimonials of students from prestigious universities validates this stating how top-ranked universities tend to have stronger alumni networks as well as higher perceived degree value improving job prospects.
+</p>
+<h3 style="color:DarkCyan;" class="anchored">
+Using the Wikipedia API
+</h3>
+<p>
+By using the Wikipedia API, we scraped the html for the page that lists the current sitting England MP’s
+</p>
+<div class="cell" data-execution_count="27">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to use the Wikipedia API to get the html for the page that lists current sitting England MPs</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>eng_page_key <span class="op">=</span> <span class="st">'List_of_MPs_for_constituencies_in_England_(2019–present)'</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>eng_page_endpoint <span class="op">=</span> <span class="st">'page/'</span> <span class="op">+</span> eng_page_key <span class="op">+</span> <span class="st">'/html'</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>stem_url <span class="op">=</span> <span class="st">'https://en.wikipedia.org/w/rest.php/v1/'</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>universal_url <span class="op">=</span> <span class="st">'https://en.wikipedia.org/wiki/'</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>headers <span class="op">=</span> {<span class="st">'User-Agent'</span>: <span class="st">'Student Project'</span>}</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>eng_url <span class="op">=</span> stem_url <span class="op">+</span> eng_page_endpoint</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_html(url):</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> requests.get(url, headers<span class="op">=</span>headers)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> BeautifulSoup(r.text)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> s</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to get a list of all the wikitables on the page</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_wikitables(s):</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    wikitables <span class="op">=</span> s.find_all(<span class="st">'table'</span>, class_<span class="op">=</span><span class="st">'wikitable'</span>)</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> wikitables</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to get only the 3rd, 5th, 7th, 9th, 11th, 13th, 15th, 17th and 19th tables in one list, as these contain the MPs</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>england_mp_wikitables <span class="op">=</span> get_wikitables(get_html(eng_url))[<span class="dv">2</span>:<span class="dv">20</span>:<span class="dv">2</span>]</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>england_mp_wikitables</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to get the links from the mp tables and put them in a list</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>eng_names <span class="op">=</span> [link.text <span class="cf">for</span> table <span class="kw">in</span> england_mp_wikitables <span class="cf">for</span> link <span class="kw">in</span> table.find_all(<span class="st">'span'</span>, class_<span class="op">=</span><span class="st">'fn'</span>)]</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>eng_names <span class="op">=</span> [link.replace(<span class="st">" "</span>, <span class="st">"_"</span>) <span class="cf">for</span> link <span class="kw">in</span> eng_names]</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>eng_links <span class="op">=</span> [link.find(<span class="st">'a'</span>)[<span class="st">'href'</span>] <span class="cf">for</span> table <span class="kw">in</span> england_mp_wikitables <span class="cf">for</span> link <span class="kw">in</span> table.find_all(<span class="st">'span'</span>, class_<span class="op">=</span><span class="st">'fn'</span>)]</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>england_mp_links <span class="op">=</span> [link.replace(<span class="st">"./"</span>, universal_url) <span class="cf">for</span> link <span class="kw">in</span> eng_links]</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="co"># england_mp_links[:15] </span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="co"># I need to get rid of the 12 MPs who have resigned or died since the last election - they are only in the england page, and are italicised in the page</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>page_html <span class="op">=</span> get_html(eng_url).find_all(<span class="st">'i'</span>)</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>relevant_lines <span class="op">=</span> page_html[<span class="dv">1</span>:<span class="dv">13</span>]</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>resigned_MP_links <span class="op">=</span> [link.get(<span class="st">'href'</span>) <span class="cf">for</span> i <span class="kw">in</span> relevant_lines <span class="cf">for</span> link <span class="kw">in</span> i.find_all(<span class="st">'a'</span>)]</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>resigned_MP_links <span class="op">=</span> [link.replace(<span class="st">"./"</span>, universal_url) <span class="cf">for</span> link <span class="kw">in</span> resigned_MP_links]</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>resigned_MP_links <span class="op">=</span> [link.replace(<span class="st">" "</span>, <span class="st">"_"</span>) <span class="cf">for</span> link <span class="kw">in</span> resigned_MP_links]</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(resigned_MP_links)</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to get rid of the resigned MPs from the list of links</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>england_mp_links_final <span class="op">=</span> [link <span class="cf">for</span> link <span class="kw">in</span> england_mp_links <span class="cf">if</span> link <span class="kw">not</span> <span class="kw">in</span> resigned_MP_links]</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="co"># len(england_mp_links_final)</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="co"># I encounter an issue here - there is one too few MP for England (532 instead of 533)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Since the UK is split into three countries, hence three different constinuencies, we use the Wikipedia API to retrieve a list of the current MP’s sitting in each constinuency; Wales, Scotland, Northern Ireland.</p>
+<section id="wales" class="level3">
+<h3 class="anchored" data-anchor-id="wales">Wales</h3>
+<p>The number of MP’s for constituencies in Wales</p>
+<div class="cell" data-execution_count="28">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to use the Wikipedia API to get the html for the page that lists current sitting Welsh MPs</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>wal_page_key <span class="op">=</span> <span class="st">'List_of_MPs_for_constituencies_in_Wales_(2019–present)'</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>wal_page_endpoint <span class="op">=</span> <span class="st">'page/'</span> <span class="op">+</span> wal_page_key <span class="op">+</span> <span class="st">'/html'</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>stem_url <span class="op">=</span> <span class="st">'https://en.wikipedia.org/w/rest.php/v1/'</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>universal_url <span class="op">=</span> <span class="st">'https://en.wikipedia.org/wiki/'</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>headers <span class="op">=</span> {<span class="st">'User-Agent'</span>: <span class="st">'Student Project'</span>}</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>wal_url <span class="op">=</span> stem_url <span class="op">+</span> wal_page_endpoint</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>wales_mp_wikitables <span class="op">=</span> get_wikitables(get_html(wal_url))[<span class="dv">1</span>]</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>wales_mp_wikitables</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>wal_names <span class="op">=</span> [link.text <span class="cf">for</span> link <span class="kw">in</span> wales_mp_wikitables.find_all(<span class="st">'span'</span>, class_<span class="op">=</span><span class="st">'fn'</span>)]</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>wal_names <span class="op">=</span> [link.replace(<span class="st">" "</span>, <span class="st">"_"</span>) <span class="cf">for</span> link <span class="kw">in</span> wal_names]</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>wal_links <span class="op">=</span> [link.find(<span class="st">'a'</span>)[<span class="st">'href'</span>] <span class="cf">for</span> link <span class="kw">in</span> wales_mp_wikitables.find_all(<span class="st">'span'</span>, class_<span class="op">=</span><span class="st">'fn'</span>)]</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>wales_mp_links <span class="op">=</span> [link.replace(<span class="st">"./"</span>, universal_url) <span class="cf">for</span> link <span class="kw">in</span> wal_links]</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(wales_mp_links)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="28">
+<pre><code>40</code></pre>
+</div>
+</div>
+</section>
+<section id="scotland" class="level3">
+<h3 class="anchored" data-anchor-id="scotland">Scotland</h3>
+<p>The number of MP’s for constituencies in Scotland</p>
+<div class="cell" data-execution_count="29">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sco_page_key <span class="op">=</span> <span class="st">'List_of_MPs_for_constituencies_in_Scotland_(2019–present)'</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>sco_page_endpoint <span class="op">=</span> <span class="st">'page/'</span> <span class="op">+</span> sco_page_key <span class="op">+</span> <span class="st">'/html'</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>stem_url <span class="op">=</span> <span class="st">'https://en.wikipedia.org/w/rest.php/v1/'</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>universal_url <span class="op">=</span> <span class="st">'https://en.wikipedia.org/wiki/'</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>headers <span class="op">=</span> {<span class="st">'User-Agent'</span>: <span class="st">'Student Project'</span>}</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>sco_url <span class="op">=</span> stem_url <span class="op">+</span> sco_page_endpoint</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>scotland_mp_wikitables <span class="op">=</span> get_wikitables(get_html(sco_url))[<span class="dv">1</span>]</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>scotland_mp_wikitables</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to get the links from the mp tables and put them in a list</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>sco_names <span class="op">=</span> [link.text <span class="cf">for</span> link <span class="kw">in</span> scotland_mp_wikitables.find_all(<span class="st">'span'</span>, class_<span class="op">=</span><span class="st">'fn'</span>)]</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>sco_names <span class="op">=</span> [link.replace(<span class="st">" "</span>, <span class="st">"_"</span>) <span class="cf">for</span> link <span class="kw">in</span> sco_names]</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>sco_links <span class="op">=</span> [link.find(<span class="st">'a'</span>)[<span class="st">'href'</span>] <span class="cf">for</span> link <span class="kw">in</span> scotland_mp_wikitables.find_all(<span class="st">'span'</span>, class_<span class="op">=</span><span class="st">'fn'</span>)]</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>scotland_mp_links <span class="op">=</span> [link.replace(<span class="st">"./"</span>, universal_url) <span class="cf">for</span> link <span class="kw">in</span> sco_links]</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(scotland_mp_links)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="29">
+<pre><code>59</code></pre>
+</div>
+</div>
+</section>
+<section id="northern-ireland" class="level3">
+<h3 class="anchored" data-anchor-id="northern-ireland">Northern Ireland</h3>
+<p>The number of MP’s for constituencies in Northern Island</p>
+<div class="cell" data-execution_count="30">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>ni_page_key <span class="op">=</span> <span class="st">'List_of_MPs_for_constituencies_in_Northern_Ireland_(2019–present)'</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>ni_page_endpoint <span class="op">=</span> <span class="st">'page/'</span> <span class="op">+</span> ni_page_key <span class="op">+</span> <span class="st">'/html'</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>stem_url <span class="op">=</span> <span class="st">'https://en.wikipedia.org/w/rest.php/v1/'</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>universal_url <span class="op">=</span> <span class="st">'https://en.wikipedia.org/wiki/'</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>headers <span class="op">=</span> {<span class="st">'User-Agent'</span>: <span class="st">'Student Project'</span>}</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>ni_url <span class="op">=</span> stem_url <span class="op">+</span> ni_page_endpoint</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>northern_ireland_mp_wikitables <span class="op">=</span> get_wikitables(get_html(ni_url))[<span class="dv">2</span>]</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>northern_ireland_mp_wikitables</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to get the links from the mp tables and put them in a list</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>ni_names <span class="op">=</span> [link.text <span class="cf">for</span> link <span class="kw">in</span> northern_ireland_mp_wikitables.find_all(<span class="st">'span'</span>, class_<span class="op">=</span><span class="st">'fn'</span>)]</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>ni_names <span class="op">=</span> [link.replace(<span class="st">" "</span>, <span class="st">"_"</span>) <span class="cf">for</span> link <span class="kw">in</span> ni_names]</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>ni_links <span class="op">=</span> [link.find(<span class="st">'a'</span>)[<span class="st">'href'</span>] <span class="cf">for</span> link <span class="kw">in</span> northern_ireland_mp_wikitables.find_all(<span class="st">'span'</span>, class_<span class="op">=</span><span class="st">'fn'</span>)]</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>northern_ireland_mp_links <span class="op">=</span> [link.replace(<span class="st">"./"</span>, universal_url) <span class="cf">for</span> link <span class="kw">in</span> ni_links]</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(northern_ireland_mp_links) </span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="30">
+<pre><code>18</code></pre>
+</div>
+</div>
+<p>Then we made the final list of all MPs, but realise that something is wrong here! There are supposed to be 650 sitting MPs, yet our list produces 649 - we try and find out which oone is missing.</p>
+<div class="cell" data-execution_count="41">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>uk_mp_links <span class="op">=</span> england_mp_links_final <span class="op">+</span> wales_mp_links <span class="op">+</span> scotland_mp_links <span class="op">+</span> northern_ireland_mp_links</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(uk_mp_links)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># uk_mp_links</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Something is wrong - there are 650 sitting MPs, but I have 649 links. I need to find out which one is missing</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="41">
+<pre><code>649</code></pre>
+</div>
+</div>
+<strong><em>We need to find out which one is missing</em></strong>
+<p>
+We investigate the missing MP by using TheyWorkForYou’s database of sitting MPs
+</p>
+<div class="cell" data-execution_count="42">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>pages_html <span class="op">=</span> get_html(<span class="st">'https://www.theyworkforyou.com/mps/'</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>mp_names_twfy <span class="op">=</span> pages_html.find_all(<span class="st">'h2'</span>, class_<span class="op">=</span><span class="st">'people-list__person__name'</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>mp_names_twfy <span class="op">=</span> [link.text <span class="cf">for</span> link <span class="kw">in</span> mp_names_twfy]</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>mp_names_twfy <span class="op">=</span> [link.replace(<span class="st">" "</span>, <span class="st">"_"</span>) <span class="cf">for</span> link <span class="kw">in</span> mp_names_twfy]</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(mp_names_twfy)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Now using regex I want to see which name is missing from my list of 649 UK MPs</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>missing_by_regex <span class="op">=</span> [name <span class="cf">for</span> name <span class="kw">in</span> mp_names_twfy <span class="cf">if</span> re.search(name, <span class="bu">str</span>(uk_mp_links)) <span class="op">==</span> <span class="va">None</span>]</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="co"># missing_by_regex</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Given the nature of some names (eg Jon Ashworth vs Jonathan Ashworth) I need to find the missing MP by hand from this list of 23 anomalies identified by regex search</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="co"># I have found that the missing MP is Kim Leadbeater, who was elected in July 2021 - this is a mistake on Wikipedia's part, for not including her in the longlist of MPs at time of writing (she replaced Tracy Babin post-resignation, but her name was not added to the England list)</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="co"># I will add her to the list of links manually, but add a check in case she is added to the Wikipedia list in the future</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>By using the ‘regex’ package we can see which name is missing from the list of 649 MP’s</p>
+<p>Given the nature of some names (eg. Jon Ashworth vs Jonathan Ashworth) we needed to find the missing MP by hand from this list of 23 anomalies identified by regex search</p>
+<div class="cell" data-execution_count="43">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>missing_by_regex</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="43">
+<pre><code>['Jon_Ashworth',
+ 'Steven_Baker',
+ 'Therese_Coffey',
+ 'Edward_Davey',
+ 'Jeffrey_M._Donaldson',
+ 'Nicholas_Fletcher',
+ 'Nusrat_Ghani',
+ 'Preet_Kaur_Gill',
+ 'Matthew_Hancock',
+ 'Christopher_Hazzard',
+ 'Dr_Caroline_Johnson',
+ 'Diana_R._Johnson',
+ 'Kate_Kniveton',
+ 'Kim_Leadbeater',
+ 'John_Martin_McDonnell',
+ 'Navendu_Mishra',
+ 'Ian_Paisley_Jnr',
+ 'Christopher_Pincher',
+ 'Liz_Saville-Roberts',
+ 'Naseem_Shah',
+ 'Andrew_Slaughter',
+ 'Elizabeth_Truss',
+ 'Thomas_Tugendhat']</code></pre>
+</div>
+</div>
+<p>The missing MP is Kim Leadbeater, who was elected in July 2021 - this is a mistake on Wikipedia’s part, for not including her in the longlist of MPs at time of writing (she replaced Tracy Babin post-resignation, but her name was not added to the England list)</p>
+<p>
+We added her to the list to complete our list of 650 MPs
+</p>
+<div class="cell" data-execution_count="66">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>missing_mp_link <span class="op">=</span> <span class="st">'https://en.wikipedia.org/wiki/Kim_Leadbeater'</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add_missing_link(link):</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> link <span class="kw">not</span> <span class="kw">in</span> uk_mp_links:</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>        uk_mp_links.append(link)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">pass</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> uk_mp_links</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>uk_mp_links_final <span class="op">=</span> add_missing_link(missing_mp_link)</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(uk_mp_links_final) </span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co"># uk_mp_links_final</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="co"># I now have 650 links, </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="66">
+<pre><code>650</code></pre>
+</div>
+</div>
+</section>
+<section id="extracting-information-for-uk-focused-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="extracting-information-for-uk-focused-analysis">Extracting information for UK-focused analysis</h3>
+<p>We group MPs by the following:</p>
+<p style="color: DarkCyan">
+• MP birth date
+</p>
+<p style="color: DarkCyan">
+• MP alma mater (university)
+</p>
+<p>We then created a function that takes a link to a UK MP’s Wikipedia page and returns a dictionary of their name, birth date, party, and university.</p>
+<p>
+After extracting the information we wanted for our UK focused analysis, we constructed the final data frame which includes all MPs birth dates, party, alma mater and name.
+</p>
+<pre><code>Then we test the function on just a singular MP</code></pre>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to create a function that takes a link to a UK MP's Wikipedia page and returns a dictionary of their name, birth date, party and university</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_mp_info(link):</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>        mp_info <span class="op">=</span> {}</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>        mp_page_html <span class="op">=</span> get_html(link)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>        mp_page_infobox <span class="op">=</span> mp_page_html.find(<span class="st">'table'</span>, class_<span class="op">=</span><span class="st">'infobox'</span>)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>: </span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>            mp_info[<span class="st">'name'</span>] <span class="op">=</span> mp_page_html.find(<span class="st">'div'</span>, class_<span class="op">=</span><span class="st">'fn'</span>).text</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span>: </span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>            mp_info[<span class="st">'name'</span>] <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> mp_info[<span class="st">'name'</span>] <span class="op">==</span> <span class="st">'Nigel Evans'</span>:</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>            mp_info[<span class="st">'birth date'</span>] <span class="op">=</span> <span class="st">'1957-11-10'</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>            <span class="cf">try</span>:</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>                mp_info[<span class="st">'birth date'</span>] <span class="op">=</span> mp_page_html.find(<span class="st">'span'</span>, class_ <span class="op">=</span> <span class="st">'bday'</span>).text</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>            <span class="cf">except</span>:</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>                mp_info[<span class="st">'birth date'</span>] <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>        all_mp_page_links <span class="op">=</span> mp_page_infobox.find_all(<span class="st">'a'</span>, title <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>            mp_info[<span class="st">'party'</span>] <span class="op">=</span> [link.text <span class="cf">for</span> link <span class="kw">in</span> all_mp_page_links <span class="cf">if</span> re.search(<span class="st">'Party|Liberal Democrats|Co-operative|Sinn|Independent|Conservative|Labour|Plaid'</span>, <span class="bu">str</span>(link)) <span class="op">!=</span> <span class="va">None</span>][<span class="dv">0</span>]</span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span>:</span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>            mp_info[<span class="st">'party'</span>] <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>            mp_info[<span class="st">'university'</span>] <span class="op">=</span> [link.text <span class="cf">for</span> link <span class="kw">in</span> all_mp_page_links <span class="cf">if</span> re.search(<span class="st">'University|London School of Economics|Imperial|Guildhall|Malachy|, Oxford|, Cambridge|Oxford$|Cambridge$'</span>, <span class="bu">str</span>(link)) <span class="op">!=</span> <span class="va">None</span>][<span class="dv">0</span>]</span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span>:</span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>            mp_info[<span class="st">'university'</span>] <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> pd.DataFrame(mp_info, index <span class="op">=</span> [<span class="dv">0</span>])</span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to test the function on a random MP</span></span>
+<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a>get_mp_info(<span class="st">'https://en.wikipedia.org/wiki/Shailesh_Vara'</span>) </span>
+<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a>uk_mps_df<span class="op">=</span> pd.concat([get_mp_info(link) <span class="cf">for</span> link <span class="kw">in</span> uk_mp_links_final])</span>
+<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a><span class="co"># uk_mps_df = pd.DataFrame([get_mp_info(link) for link in uk_mp_links_final])</span></span>
+<span id="cb17-33"><a href="#cb17-33" aria-hidden="true" tabindex="-1"></a><span class="co"># NB takes &lt;5 mins to run </span></span>
+<span id="cb17-34"><a href="#cb17-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-35"><a href="#cb17-35" aria-hidden="true" tabindex="-1"></a>uk_mps_df[<span class="st">'birth date'</span>] <span class="op">=</span> pd.to_datetime(uk_mps_df[<span class="st">'birth date'</span>])</span>
+<span id="cb17-36"><a href="#cb17-36" aria-hidden="true" tabindex="-1"></a>uk_mps_df[<span class="st">'age'</span>] <span class="op">=</span> <span class="bu">round</span>((pd.to_datetime(<span class="st">'today'</span>) <span class="op">-</span> uk_mps_df[<span class="st">'birth date'</span>])<span class="op">/</span>np.timedelta64(<span class="dv">1</span>,<span class="st">'Y'</span>), <span class="dv">1</span>)</span>
+<span id="cb17-37"><a href="#cb17-37" aria-hidden="true" tabindex="-1"></a>uk_mps_df.to_csv(<span class="st">'data/uk_mps_dataframe.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb17-38"><a href="#cb17-38" aria-hidden="true" tabindex="-1"></a>uk_mps_df </span>
+<span id="cb17-39"><a href="#cb17-39" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p><strong>Great! It works</strong></p>
+<p>Now we get a dataframe of all the sitting MPs birthday date, party, alma mater and name:</p>
+</section>
+<section id="uk-data-visualisations-and-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="uk-data-visualisations-and-analysis">UK Data Visualisations and Analysis</h3>
+<p>•&nbsp;Clearly we have some missing values for university (problems with the wikipedia page not containing this information) therefore births analysis will be limited to MPs for whom birth data is available.</p>
+<p>• University analysis will be limited to university-attendees where data is available so 570 out of the 650</p>
+<p>• We use UN data for UK comparison</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># UN Births Data for UK for comparison</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>UN_births_data<span class="op">=</span>pd.read_csv(<span class="st">'data/Births Data UN.csv'</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>UN_births_data.drop([<span class="st">'Area'</span>, <span class="st">'Record Type'</span>, <span class="st">'Value Footnotes'</span>, <span class="st">'Source Year'</span>],axis<span class="op">=</span><span class="dv">1</span>,inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>UN_births_data<span class="op">=</span>UN_births_data.query(<span class="st">"Month in ['January','February','March','April','May','June','July','August','September','October','November','December']"</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="co"># I want a subset of UN_births_data for the UK only</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>UK_UN_births_data <span class="op">=</span> UN_births_data.loc[UN_births_data[<span class="st">'Country or Area'</span>] <span class="op">==</span> <span class="st">'United Kingdom of Great Britain and Northern Ireland'</span>]</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co"># We have data for the period 1982 to 2020, which is acceptable</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>UK_UN_births_data <span class="op">=</span> UK_UN_births_data.groupby(<span class="st">'Month'</span>).<span class="bu">sum</span>()[[<span class="st">'Value'</span>]].reindex([<span class="st">'January'</span>,<span class="st">'February'</span>,<span class="st">'March'</span>,<span class="st">'April'</span>,<span class="st">'May'</span>,<span class="st">'June'</span>,<span class="st">'July'</span>,<span class="st">'August'</span>,<span class="st">'September'</span>,<span class="st">'October'</span>,<span class="st">'November'</span>,<span class="st">'December'</span>])</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>UK_UN_births_data.index<span class="op">=</span>[<span class="st">'Jan'</span>,<span class="st">'Feb'</span>,<span class="st">'Mar'</span>,<span class="st">'Apr'</span>,<span class="st">'May'</span>,<span class="st">'Jun'</span>,<span class="st">'Jul'</span>,<span class="st">'Aug'</span>,<span class="st">'Sep'</span>,<span class="st">'Oct'</span>,<span class="st">'Nov'</span>,<span class="st">'Dec'</span>]</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>UK_UN_births_data[<span class="st">'uk_population_births_percentage'</span>]<span class="op">=</span>(UK_UN_births_data[<span class="st">'Value'</span>]<span class="op">/</span>UK_UN_births_data[<span class="st">'Value'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>UK_UN_births_data.rename(columns<span class="op">=</span>{<span class="st">'Value'</span>:<span class="st">'uk_un_births_count'</span>},inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>UK_UN_births_data </span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>monthly_mp_data<span class="op">=</span>uk_mps_df.groupby(uk_mps_df[<span class="st">'birth date'</span>].dt.month).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>monthly_mp_data.index<span class="op">=</span>[<span class="st">'Jan'</span>,<span class="st">'Feb'</span>,<span class="st">'Mar'</span>,<span class="st">'Apr'</span>,<span class="st">'May'</span>,<span class="st">'Jun'</span>,<span class="st">'Jul'</span>,<span class="st">'Aug'</span>,<span class="st">'Sep'</span>,<span class="st">'Oct'</span>,<span class="st">'Nov'</span>,<span class="st">'Dec'</span>]</span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>monthly_mp_data[<span class="st">'uk_mps_births_percentage'</span>]<span class="op">=</span>(monthly_mp_data[<span class="st">'name'</span>]<span class="op">/</span>monthly_mp_data[<span class="st">'name'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>monthly_mp_data.rename(columns<span class="op">=</span>{<span class="st">'name'</span>:<span class="st">'uk_mp_count'</span>},inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a>monthly_mp_data </span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Preparing data for visualisation</span></span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a>merged_uk_df <span class="op">=</span> pd.merge(monthly_mp_data,UK_UN_births_data,how<span class="op">=</span><span class="st">'left'</span>,left_index<span class="op">=</span><span class="va">True</span>,right_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a>merged_uk_df[<span class="st">'percentage_difference'</span>] <span class="op">=</span> (merged_uk_df[<span class="st">'uk_mps_births_percentage'</span>] <span class="op">-</span> merged_uk_df[<span class="st">'uk_population_births_percentage'</span>])<span class="op">/</span>merged_uk_df[<span class="st">'uk_population_births_percentage'</span>]<span class="op">*</span><span class="dv">100</span></span>
+<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a>merged_uk_df.index<span class="op">=</span>pd.Categorical(merged_uk_df.index, categories<span class="op">=</span>[<span class="st">'Jan'</span>,<span class="st">'Feb'</span>,<span class="st">'Mar'</span>,<span class="st">'Apr'</span>,<span class="st">'May'</span>,<span class="st">'Jun'</span>,<span class="st">'Jul'</span>,<span class="st">'Aug'</span>,<span class="st">'Sep'</span>,<span class="st">'Oct'</span>,<span class="st">'Nov'</span>,<span class="st">'Dec'</span>], ordered<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb18-24"><a href="#cb18-24" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<h4 class="anchored">
+Age Distribution of UK MPs
+</h4>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to plot the percentages of the number of UK MPs born in each month and the percentage of the UK population born in each month</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotnine requires a dataframe in long format for double bar plot</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co"># # Older implementation using matplotlib</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="co"># merged_uk_df['month'] = merged_uk_df.index</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="co"># merged_uk_df['month'] = pd.Categorical(merged_uk_df['month'], categories=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'], ordered=True)</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="co"># merged_uk_df.plot(x='month', y=['uk_mps_births_percentage','uk_population_births_percentage'], legend=True, kind='bar', title='UK MP births per month (%) vs UK births per month (%)', figsize=(15,10), color=['blue', 'green'])</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a><span class="co"># plt.show() </span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the ages of MPs as a histogram</span></span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>ggplot(uk_mps_df,aes(x<span class="op">=</span><span class="st">'age'</span>)) <span class="op">\</span></span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_histogram(binwidth<span class="op">=</span><span class="dv">2</span>, fill<span class="op">=</span><span class="st">'blue'</span>, color<span class="op">=</span><span class="st">'white'</span>) <span class="op">\</span></span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(title<span class="op">=</span><span class="st">'Figure 1: Age distribution of UK MPs'</span>,x<span class="op">=</span><span class="st">'Age'</span>,y<span class="op">=</span><span class="st">'Count'</span>) <span class="op">\</span></span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">10</span>)) <span class="op">\</span></span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> scale_x_continuous(breaks<span class="op">=</span><span class="bu">range</span>(<span class="dv">0</span>,<span class="dv">100</span>,<span class="dv">5</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell" data-execution_count="72">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'The average age of a UK MP is </span><span class="sc">{</span><span class="bu">round</span>(uk_mps_df[<span class="st">"age"</span>].mean(),<span class="dv">1</span>)<span class="sc">}</span><span class="ss"> years old.'</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>The average age of a UK MP is 53.3 years old.</code></pre>
+</div>
+</div>
+<p>
+We would expect most MPs to be in this age interval.
+</p>
+<p>
+As expected, age follows a normal distribution with a mean centred around 53.3
+</p>
+<h4 class="anchored">
+UK Politician’s Birth Month
+</h4>
+<div class="cell" data-execution_count="62">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Percentage difference plot</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>ggplot(merged_uk_df,aes(x<span class="op">=</span><span class="st">'merged_uk_df.index'</span>,y<span class="op">=</span><span class="st">'percentage_difference'</span>, fill<span class="op">=</span><span class="st">'percentage_difference'</span>)) <span class="op">\</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>) <span class="op">\</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(title<span class="op">=</span><span class="st">'Figure 2: Percentage difference between MP birth month proportions and population data'</span>,x<span class="op">=</span><span class="st">'Month'</span>,y<span class="op">=</span><span class="st">'Percentage Difference'</span>) <span class="op">\</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> scale_fill_gradient(low<span class="op">=</span><span class="st">'red'</span>,high<span class="op">=</span><span class="st">'green'</span>, breaks<span class="op">=</span>[<span class="dv">0</span>]) <span class="op">\</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">5</span>), legend_position<span class="op">=</span><span class="st">'none'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="uk-analysis1_files/figure-html/cell-15-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="63">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>plot_df<span class="op">=</span>pd.concat([merged_uk_df[[<span class="st">'uk_mps_births_percentage'</span>]].rename(columns<span class="op">=</span>{<span class="st">'uk_mps_births_percentage'</span>:<span class="st">'percentage'</span>})<span class="op">\</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>                   ,merged_uk_df[[<span class="st">'uk_population_births_percentage'</span>]].rename(columns<span class="op">=</span>{<span class="st">'uk_population_births_percentage'</span>:<span class="st">'percentage'</span>})],axis<span class="op">=</span><span class="dv">0</span>).reset_index()</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>plot_df[<span class="st">'Category'</span>]<span class="op">=</span>[<span class="st">'MPs'</span> <span class="cf">if</span> i<span class="op">&lt;</span><span class="dv">12</span> <span class="cf">else</span> <span class="st">'Population'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">24</span>)]</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>ggplot(plot_df,aes(x<span class="op">=</span><span class="st">'index'</span>,y<span class="op">=</span><span class="st">'percentage'</span>,fill<span class="op">=</span><span class="st">'Category'</span>))<span class="op">\</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_hline(yintercept<span class="op">=</span><span class="fl">8.33</span>, linetype<span class="op">=</span><span class="st">'dashed'</span>, color<span class="op">=</span><span class="st">'black'</span>) <span class="op">\</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, position<span class="op">=</span><span class="st">'dodge'</span>, width<span class="op">=</span><span class="fl">0.5</span>) <span class="op">\</span></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(x<span class="op">=</span><span class="st">'Month'</span>, y<span class="op">=</span><span class="st">'Percentage'</span>, title<span class="op">=</span><span class="st">'Figure 3: UK MP births per month (%) vs UK births per month (%)'</span>) <span class="op">\</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))<span class="op">\</span></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> scale_fill_manual(values<span class="op">=</span>[<span class="st">'blue'</span>,<span class="st">'green'</span>]) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="uk-analysis1_files/figure-html/cell-16-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>
+Looking at Figure 2, we observe that the trends we saw in politicians being born in the first six months, don’t necessarily hild here.
+</p>
+<p>
+Although people born in March and April i.e initial months in the year are relatively higher than the rest, so are results for being born in September and August serving as a counterexample for a clear generalizable trend. However considering that the schooling system in Britain starts from September the earlier explanation of the relative age effect might still be at play. Specifically, the advantage of being born earlier in terms of maturity and development might improve the likelihood of future opportunities such as pursuing a career in politics, explaining why a much higher percentage of politicians 9.51 and 9.35 are born in August and September respectively. However, this is conflicting considering that the results are similar for March and April, 9.19 and 9.03 where the same reasoning doesn’t hold.
+</p>
+<h4 class="anchored">
+University
+</h4>
+<p>We rank the universities by the count of MPs who attended and what percentage of all MPs attended the university:</p>
+<div class="cell" data-execution_count="69">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>universities_list <span class="op">=</span> pd.DataFrame(uk_mps_df[<span class="st">'university'</span>])</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>universities_list.dropna(inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Currently LSE is most common, but the colleges in cambridge and oxford should not be counted as separate universities</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to create a dataframe of only values from the universities_list that satisfy the regex search for 'Oxford$'</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>oxford <span class="op">=</span> universities_list[universities_list[<span class="st">'university'</span>].<span class="bu">str</span>.contains(<span class="st">'Oxford$'</span>)]</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>oxford</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to create a dataframe of only values from the universities_list that satisfy the regex search for 'Cambridge|St. John'</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>cambridge <span class="op">=</span> universities_list[universities_list[<span class="st">'university'</span>].<span class="bu">str</span>.contains(<span class="st">'Cambridge|St. John'</span>)]</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>cambridge</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to correct for other variants of names</span></span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>universities_list.loc[universities_list[<span class="st">'university'</span>].<span class="bu">str</span>.contains(<span class="st">'London School of Economics'</span>), <span class="st">'university'</span>] <span class="op">=</span> <span class="st">'London School of Economics'</span></span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to replace all values in the universities_list dataframe that are also present in the oxford dataframe with 'University of Oxford'</span></span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>universities_list.loc[universities_list[<span class="st">'university'</span>].isin(oxford[<span class="st">'university'</span>]), <span class="st">'university'</span>] <span class="op">=</span> <span class="st">'University of Oxford'</span></span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a><span class="co"># I want to replace all values in the universities_list dataframe that are also present in the cambridge dataframe with 'University of Cambridge'</span></span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>universities_list.loc[universities_list[<span class="st">'university'</span>].isin(cambridge[<span class="st">'university'</span>]), <span class="st">'university'</span>] <span class="op">=</span> <span class="st">'University of Cambridge'</span></span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>universities_ranked <span class="op">=</span> pd.DataFrame(universities_list.value_counts()).reset_index()</span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>universities_ranked.rename(columns<span class="op">=</span>{<span class="dv">0</span>:<span class="st">'count'</span>, <span class="st">'university'</span>:<span class="st">'university'</span>},inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a>universities_ranked[<span class="st">'percentage'</span>] <span class="op">=</span> (universities_ranked[<span class="st">'count'</span>]<span class="op">/</span>universities_ranked[<span class="st">'count'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a>universities_ranked.rename(columns<span class="op">=</span>{<span class="st">'count'</span>:<span class="st">'number of MPs'</span>},inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a>universities_ranked</span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Now Oxford and Cambridge are correctly represented </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="69">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">university</th>
+<th data-quarto-table-cell-role="th">number of MPs</th>
+<th data-quarto-table-cell-role="th">percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>University of Oxford</td>
+<td>76</td>
+<td>14.99</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>University of Cambridge</td>
+<td>46</td>
+<td>9.07</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>London School of Economics</td>
+<td>19</td>
+<td>3.75</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>University of Edinburgh</td>
+<td>12</td>
+<td>2.37</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>University of Glasgow</td>
+<td>12</td>
+<td>2.37</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">118</td>
+<td>Newcastle Polytechnic</td>
+<td>1</td>
+<td>0.20</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">119</td>
+<td>Moray House College of Education</td>
+<td>1</td>
+<td>0.20</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">120</td>
+<td>London South Bank University</td>
+<td>1</td>
+<td>0.20</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">121</td>
+<td>London Metropolitan University</td>
+<td>1</td>
+<td>0.20</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">122</td>
+<td>Wrexham Glyndŵr University</td>
+<td>1</td>
+<td>0.20</td>
+</tr>
+</tbody>
+</table>
+
+<p>123 rows × 3 columns</p>
+</div>
+</div>
+</div>
+<h5 class="anchored">
+What university did most politicians attend in the UK?
+</h5>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Top 10 universities attended by MPs, plotted with multiple colours</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>universities_ranked[<span class="st">'university'</span>] <span class="op">=</span> pd.Categorical(universities_ranked[<span class="st">'university'</span>], categories<span class="op">=</span>universities_ranked[<span class="st">'university'</span>], ordered<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the plot using plotnine</span></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>plot <span class="op">=</span> (</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>    ggplot(universities_ranked.head(<span class="dv">10</span>), aes(x<span class="op">=</span><span class="st">'university'</span>, y<span class="op">=</span><span class="st">'number of MPs'</span>, fill<span class="op">=</span><span class="st">'university'</span>)) <span class="op">+</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>    geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, width<span class="op">=</span><span class="fl">0.5</span>) <span class="op">+</span></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>    labs(title<span class="op">=</span><span class="st">'Figure 4: Top 10 universities attended by MPs'</span>, x<span class="op">=</span><span class="st">'University'</span>, y<span class="op">=</span><span class="st">'Number of MPs'</span>) <span class="op">+</span></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>    scale_fill_manual(values<span class="op">=</span>[<span class="st">'blue'</span>, <span class="st">'cyan'</span>, <span class="st">'red'</span>, <span class="st">'gold'</span>, <span class="st">'black'</span>, <span class="st">'deeppink'</span>, <span class="st">'violet'</span>, <span class="st">'olive'</span>, <span class="st">'tomato'</span>, <span class="st">'grey'</span>]) <span class="op">+</span></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>    theme(figure_size<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>), legend_position<span class="op">=</span><span class="st">'none'</span>, axis_text_x<span class="op">=</span>element_text(rotation<span class="op">=</span><span class="dv">90</span>)) <span class="op">+</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>    scale_y_continuous(breaks<span class="op">=</span><span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">100</span>, <span class="dv">10</span>))</span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>
+As we can tell from Figure 4, there is a clear indication of the most frequently attended university of UK politicians - University of Oxford.
+</p>
+<pre><code>    75 of politicians attended Oxford </code></pre>
+<p>
+Other universities are not even close to competing with Oxford, not even LSE!
+</p>
+<div class="cell" data-execution_count="65">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotnine does not support coord_polar of ggplot yet, so we will have to use matplotlib</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="co"># In the worst case we can use a stacked bar chart or some other alternative</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>universities_ranked.plot(x<span class="op">=</span><span class="st">"university"</span>, y<span class="op">=</span><span class="st">"percentage"</span>, kind<span class="op">=</span><span class="st">'pie'</span>, title<span class="op">=</span><span class="st">'Figure 5: Oxbridge Domination'</span>, figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">10</span>), colors<span class="op">=</span>[<span class="st">'blue'</span>,<span class="st">'cyan'</span>,<span class="st">'red'</span>,<span class="st">'orange'</span>,<span class="st">'purple'</span>,<span class="st">'yellow'</span>,<span class="st">'pink'</span>,<span class="st">'brown'</span>,<span class="st">'grey'</span>,<span class="st">'black'</span>,<span class="st">'green'</span>,<span class="st">'lightblue'</span>,<span class="st">'lightgreen'</span>,<span class="st">'lightgrey'</span>,<span class="st">'lightpink'</span>], labels<span class="op">=</span><span class="va">None</span>, ylabel<span class="op">=</span><span class="va">None</span>, xlabel<span class="op">=</span><span class="va">None</span>, startangle<span class="op">=</span><span class="dv">90</span>, counterclock<span class="op">=</span><span class="va">True</span>, legend<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>plt.show() </span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>oxford_percentage <span class="op">=</span> universities_ranked.loc[universities_ranked[<span class="st">'university'</span>] <span class="op">==</span> <span class="st">'University of Oxford'</span>, <span class="st">'percentage'</span>].values[<span class="dv">0</span>]</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Oxford percentage: '</span> <span class="op">+</span> <span class="bu">str</span>(oxford_percentage) <span class="op">+</span> <span class="st">'%'</span>)</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>cambridge_percentage <span class="op">=</span> universities_ranked.loc[universities_ranked[<span class="st">'university'</span>] <span class="op">==</span> <span class="st">'University of Cambridge'</span>, <span class="st">'percentage'</span>].values[<span class="dv">0</span>]</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Cambridge percentage: '</span> <span class="op">+</span> <span class="bu">str</span>(cambridge_percentage) <span class="op">+</span> <span class="st">'%'</span>)</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>oxbridge_percentage <span class="op">=</span> (universities_list.value_counts()[<span class="dv">0</span>:<span class="dv">2</span>].<span class="bu">sum</span>()<span class="op">/</span>universities_list.value_counts().<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Oxbridge percentage: '</span> <span class="op">+</span> <span class="bu">str</span>(oxbridge_percentage) <span class="op">+</span> <span class="st">'%'</span>)</span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>lse_percentage <span class="op">=</span> universities_ranked.loc[universities_ranked[<span class="st">'university'</span>] <span class="op">==</span> <span class="st">'London School of Economics'</span>, <span class="st">'percentage'</span>].values[<span class="dv">0</span>]</span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'LSE percentage: '</span> <span class="op">+</span> <span class="bu">str</span>(lse_percentage) <span class="op">+</span> <span class="st">'%'</span>) </span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="uk-analysis1_files/figure-html/cell-19-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Oxford percentage: 14.99%
+Cambridge percentage: 9.07%
+Oxbridge percentage: 24.1%
+LSE percentage: 3.75%</code></pre>
+</div>
+</div>
+<p>Oxbridge have clearly dominated the politician alma mater. Is there something else at play here?</p>
+<p>Nevertheless, we have shown that a significant propotion of politicians have attended elite universities, it is now the job of the economists and political scientits to determine how significant of a problem this is for the governing of the state!</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

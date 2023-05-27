@@ -1,0 +1,40 @@
+project:
+  type: website 
+  output-dir: docs
+
+
+website:
+  title: "DataDemocrats"
+  navbar:
+    left:
+    - text: "Contents"
+      menu:
+      - Untitled-1.ipynb
+      - analysis-process.qmd
+      - data_coll.ipynb 
+      - birth_month.ipynb
+      - day_birth.ipynb
+      - uk-analysis1.ipynb
+      - gender.ipynb
+      - zodiac.ipynb
+      - final_comms.ipynb
+  
+
+format:
+  html:
+    theme: sketchy
+    # mainfont: arial
+    fontsize: 1.5rem
+    fontcolour: "#FEFEFE"
+    linkcolour: "#E1137D"
+    monofont: courier new
+    css: styles.css
+    toc: true 
+    code-link: true 
+    code-tools: true # can hide the code and can show the code as and when
+    code-block-border-left: "#E1137D" 
+    code-fold: true
+    
+
+
+

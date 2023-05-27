@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>DataDemocrats - Exploring Gender</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DataDemocrats</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-contents" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Contents</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-contents">    
+        <li>
+    <a class="dropdown-item" href="./Untitled-1.html" rel="" target="">
+ <span class="dropdown-text">The Overall Process</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./analysis-process.html" rel="" target="">
+ <span class="dropdown-text">Analysis Process</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./data_coll.html" rel="" target="">
+ <span class="dropdown-text">Data Collection and Cleaning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./birth_month.html" rel="" target="">
+ <span class="dropdown-text">Exploring Birth Month</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./day_birth.html" rel="" target="">
+ <span class="dropdown-text">Exploring First letter of a name</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./uk-analysis1.html" rel="" target="">
+ <span class="dropdown-text">Exploring University</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./gender.html" rel="" target="">
+ <span class="dropdown-text">Exploring Gender</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./zodiac.html" rel="" target="">
+ <span class="dropdown-text">Exploring Zodiac</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./final_comms.html" rel="" target="">
+ <span class="dropdown-text">Final Comments</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Exploring Gender</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Investigating disparities in gender is important to this research question. There are many underlying, systematic biases which result in a lack of female representation in certain industries and roles. We explore gender disparities in politics below.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>df<span class="op">=</span>pd.read_csv(<span class="st">'data/data.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<h4 class="anchored">
+Gender split across all countries
+</h4>
+<div class="cell" data-execution_count="83">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>gender_df<span class="op">=</span>df.groupby(df[<span class="st">'gender'</span>]).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>gender_df[<span class="st">'percentage'</span>]<span class="op">=</span>(gender_df[<span class="st">'name'</span>]<span class="op">/</span>gender_df[<span class="st">'name'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>gender_df.rename(columns<span class="op">=</span>{<span class="st">'name'</span>:<span class="st">'count'</span>},inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>gender_df.reset_index(inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>ggplot(gender_df, aes(x<span class="op">=</span><span class="st">'gender'</span>, y<span class="op">=</span><span class="st">'percentage'</span>, fill<span class="op">=</span><span class="st">'gender'</span>))<span class="op">\</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, position<span class="op">=</span><span class="st">'dodge'</span>, width<span class="op">=</span><span class="fl">0.7</span>)<span class="op">\</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_text(aes(label<span class="op">=</span><span class="st">'percentage'</span>), position<span class="op">=</span>position_dodge(width<span class="op">=</span><span class="fl">0.7</span>), va<span class="op">=</span><span class="st">'bottom'</span>)<span class="op">\</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> labs(title<span class="op">=</span><span class="st">'Figure 1: Gender Split across All Countries'</span>)<span class="op">\</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">5</span>,))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="gender_files/figure-html/cell-3-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<pre><code>This figure is alarming!</code></pre>
+<h4 class="anchored">
+G7 Country wise data
+</h4>
+<p>We now break down the above data by country and development to understand specific data trends within and across different countries of different development</p>
+<div class="cell" data-execution_count="84">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># G7 Country wise data</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>g7_countries<span class="op">=</span>[<span class="st">'Canada'</span>,<span class="st">'France'</span>,<span class="st">'Germany'</span>,<span class="st">'Italy'</span>,<span class="st">'Japan'</span>,<span class="st">'United Kingdom'</span>,<span class="st">'United States'</span>]</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>g7_df<span class="op">=</span>df[df[<span class="st">'country'</span>].isin(g7_countries)]</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># g7_df </span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>g7_gender_df<span class="op">=</span>g7_df.groupby(g7_df[<span class="st">'gender'</span>]).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>g7_gender_df[<span class="st">'percentage'</span>]<span class="op">=</span>(g7_gender_df[<span class="st">'name'</span>]<span class="op">/</span>g7_gender_df[<span class="st">'name'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>g7_gender_df.rename(columns<span class="op">=</span>{<span class="st">'name'</span>:<span class="st">'count'</span>},inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>g7_gender_df.reset_index(inplace<span class="op">=</span><span class="va">True</span>) </span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>ggplot(g7_gender_df, aes(x<span class="op">=</span><span class="st">'gender'</span>, y<span class="op">=</span><span class="st">'percentage'</span>, fill<span class="op">=</span><span class="st">'gender'</span>))<span class="op">\</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, position<span class="op">=</span><span class="st">'dodge'</span>, width<span class="op">=</span><span class="fl">0.7</span>)<span class="op">\</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_text(aes(label<span class="op">=</span><span class="st">'percentage'</span>), position<span class="op">=</span>position_dodge(width<span class="op">=</span><span class="fl">0.7</span>), va<span class="op">=</span><span class="st">'bottom'</span>)<span class="op">\</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> labs(title<span class="op">=</span><span class="st">'Gender Split across G7 Countries'</span>)<span class="op">\</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">5</span>,))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="gender_files/figure-html/cell-4-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>
+The gender gap in political representation is relatively robust to different groupings based on HDI, MYS or other development indicators. It certainly showcases a heavily positive correlation between being a politician and being male. This can be backed up by historical and cultural norms, gender roles, structural barriers, and gender biases in the electorate. These factors play into limiting women’s access to political opportunities thereby discouraging participation in politics.
+</p>
+<p>
+Although this result is intuitive it is worthwhile considering that the disparity between being a politician given you are male versus female is significantly more apparent for highly gender-unequal countries. This is shown most clearly by the percentage difference between being a politician given you are female for the highest Gender Inequality Index countries when compared to the lowest ones. So while the average split globally for gender representation is 22.2% female and 77.8% male, for the lowest GII countries it is 11.08% and 88.92%. This difference is not as pronounced for other development indicators such as income and HDI as visualised in the graphs. This is unsurprising considering the construction of the HDI index and mean income is by nature focused more on overall economic factors whereas the GII is more suited to measuring gender disparities and biases.Moreover this explains why some countries like Rwanda that are classified as low development countries with an index of 0.543 actually have high political representation as accounted for by the low ‘Gender Inequality’ value of 0.338.
+</p>
+<h4 class="anchored">
+UK only data
+</h4>
+<div class="cell" data-execution_count="85">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># UK only data</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>uk_df<span class="op">=</span>df[df[<span class="st">'country'</span>]<span class="op">==</span><span class="st">'United Kingdom'</span>]</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>uk_gender_df<span class="op">=</span>uk_df.groupby(uk_df[<span class="st">'gender'</span>]).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>uk_gender_df[<span class="st">'percentage'</span>]<span class="op">=</span>(uk_gender_df[<span class="st">'name'</span>]<span class="op">/</span>uk_gender_df[<span class="st">'name'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>uk_gender_df.rename(columns<span class="op">=</span>{<span class="st">'name'</span>:<span class="st">'count'</span>},inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>uk_gender_df.reset_index(inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># uk_gender_df</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Currently this sits at 35% in house of commons and 29% in house of lords </span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>ggplot(uk_gender_df, aes(x<span class="op">=</span><span class="st">'gender'</span>, y<span class="op">=</span><span class="st">'percentage'</span>, fill<span class="op">=</span><span class="st">'gender'</span>))<span class="op">\</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, position<span class="op">=</span><span class="st">'dodge'</span>, width<span class="op">=</span><span class="fl">0.7</span>)<span class="op">\</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_text(aes(label<span class="op">=</span><span class="st">'percentage'</span>), position<span class="op">=</span>position_dodge(width<span class="op">=</span><span class="fl">0.7</span>), va<span class="op">=</span><span class="st">'bottom'</span>)<span class="op">\</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> labs(title<span class="op">=</span><span class="st">'Gender Split across UK (incl. historical data)'</span>)<span class="op">\</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">5</span>,))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="gender_files/figure-html/cell-5-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<h4 class="anchored">
+Top Highest HDI Countries
+</h4>
+<div class="cell" data-execution_count="86">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Top 5 Highest HDI countries</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>Top_5_HDI_countries<span class="op">=</span>[<span class="st">'Switzerland'</span>,<span class="st">'Norway'</span>,<span class="st">'Iceland'</span>,<span class="st">'Hong Kong'</span>,<span class="st">'Australia'</span>]</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>H_HDI_df<span class="op">=</span>df[df[<span class="st">'country'</span>].isin(Top_5_HDI_countries)]</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>H_HDI_df</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>H_HDI_gender_df<span class="op">=</span>H_HDI_df.groupby(H_HDI_df[<span class="st">'gender'</span>]).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>H_HDI_gender_df[<span class="st">'percentage'</span>]<span class="op">=</span>(H_HDI_gender_df[<span class="st">'name'</span>]<span class="op">/</span>H_HDI_gender_df[<span class="st">'name'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>H_HDI_gender_df.rename(columns<span class="op">=</span>{<span class="st">'name'</span>:<span class="st">'count'</span>},inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>H_HDI_gender_df.reset_index(inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co"># H_HDI_gender_df </span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>ggplot(H_HDI_gender_df, aes(x<span class="op">=</span><span class="st">'gender'</span>, y<span class="op">=</span><span class="st">'percentage'</span>, fill<span class="op">=</span><span class="st">'gender'</span>))<span class="op">\</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, position<span class="op">=</span><span class="st">'dodge'</span>, width<span class="op">=</span><span class="fl">0.7</span>)<span class="op">\</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_text(aes(label<span class="op">=</span><span class="st">'percentage'</span>), position<span class="op">=</span>position_dodge(width<span class="op">=</span><span class="fl">0.7</span>), va<span class="op">=</span><span class="st">'bottom'</span>)<span class="op">\</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> labs(title<span class="op">=</span><span class="st">'Gender Split across Top 5 HDI Countries'</span>)<span class="op">\</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">5</span>,))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="gender_files/figure-html/cell-6-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<h4 class="anchored">
+Top Lowest HDI countries
+</h4>
+<div class="cell" data-execution_count="87">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Top 5 lowest HDI countries</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>Top_5_Lowest_HDI_countries<span class="op">=</span>[<span class="st">'South Sudan'</span>,<span class="st">'Chad'</span>,<span class="st">'Niger'</span>,<span class="st">'Central African Republic'</span>,<span class="st">'Burundi'</span>]</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>L_HDI_df<span class="op">=</span>df[df[<span class="st">'country'</span>].isin(Top_5_Lowest_HDI_countries)]</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>L_HDI_df</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>L_HDI_gender_df<span class="op">=</span>L_HDI_df.groupby(L_HDI_df[<span class="st">'gender'</span>]).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>L_HDI_gender_df[<span class="st">'percentage'</span>]<span class="op">=</span>(L_HDI_gender_df[<span class="st">'name'</span>]<span class="op">/</span>L_HDI_gender_df[<span class="st">'name'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>L_HDI_gender_df.rename(columns<span class="op">=</span>{<span class="st">'name'</span>:<span class="st">'count'</span>},inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>L_HDI_gender_df.reset_index(inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co"># L_HDI_gender_df </span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>ggplot(L_HDI_gender_df, aes(x<span class="op">=</span><span class="st">'gender'</span>, y<span class="op">=</span><span class="st">'percentage'</span>, fill<span class="op">=</span><span class="st">'gender'</span>))<span class="op">\</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, position<span class="op">=</span><span class="st">'dodge'</span>, width<span class="op">=</span><span class="fl">0.7</span>)<span class="op">\</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_text(aes(label<span class="op">=</span><span class="st">'percentage'</span>), position<span class="op">=</span>position_dodge(width<span class="op">=</span><span class="fl">0.7</span>), va<span class="op">=</span><span class="st">'bottom'</span>)<span class="op">\</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> labs(title<span class="op">=</span><span class="st">'Gender Split across Bottom 5 HDI Countries'</span>)<span class="op">\</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">5</span>,))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="gender_files/figure-html/cell-7-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="88">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> utils</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># '''This module contains utility functions, variables, and data structures for use in the notebooks.'''</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------Top and bottom countries of indices------------------------------------</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co"># UN Indices Data:</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>indices_data<span class="op">=</span>pd.read_csv(<span class="st">'data/UN HDR all indices data.csv'</span>)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>indices_data<span class="op">=</span>indices_data[[<span class="st">'country'</span>,<span class="st">'hdi_2021'</span>,<span class="st">'le_2021'</span>,<span class="st">'eys_2021'</span>,<span class="st">'mys_2021'</span>,<span class="st">'gnipc_2021'</span>, <span class="st">'gdi_2021'</span>,<span class="st">'ihdi_2021'</span>,<span class="st">'coef_ineq_2021'</span>,<span class="st">'region'</span>, <span class="st">'gii_2021'</span>]]</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>high_hdi<span class="op">=</span>indices_data[indices_data[<span class="st">'hdi_2021'</span>]<span class="op">&gt;</span><span class="fl">0.8</span>][<span class="st">'country'</span>].tolist()</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>low_hdi<span class="op">=</span>indices_data[indices_data[<span class="st">'hdi_2021'</span>]<span class="op">&lt;</span><span class="fl">0.7</span>][<span class="st">'country'</span>].tolist()</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>top_50_mys<span class="op">=</span>indices_data.sort_values(by<span class="op">=</span>[<span class="st">'mys_2021'</span>], ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">50</span>)[<span class="st">'country'</span>].tolist()</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>bottom_50_mys<span class="op">=</span>indices_data.sort_values(by<span class="op">=</span>[<span class="st">'mys_2021'</span>], ascending<span class="op">=</span><span class="va">True</span>).head(<span class="dv">50</span>)[<span class="st">'country'</span>].tolist()</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>top_gii<span class="op">=</span>indices_data.sort_values(by<span class="op">=</span>[<span class="st">'gii_2021'</span>], ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">20</span>)[<span class="st">'country'</span>].tolist()</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>bottom_gii<span class="op">=</span>indices_data.sort_values(by<span class="op">=</span>[<span class="st">'gii_2021'</span>], ascending<span class="op">=</span><span class="va">True</span>).head(<span class="dv">20</span>)[<span class="st">'country'</span>].tolist()</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------Income groups------------------------------------</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a><span class="co"># World Bank Data:</span></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>wb_data<span class="op">=</span>pd.read_csv(<span class="st">'data/income_data.csv'</span>)</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>low_income<span class="op">=</span>wb_data[wb_data[<span class="st">'Income group'</span>]<span class="op">==</span><span class="st">'Low income'</span>][<span class="st">'Country'</span>].tolist()</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>high_income<span class="op">=</span>wb_data[wb_data[<span class="st">'Income group'</span>]<span class="op">==</span><span class="st">'High income'</span>][<span class="st">'Country'</span>].tolist()</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------V-Dem Electoral Democracy Score------------------------------------</span></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>vdem_data<span class="op">=</span>pd.read_csv(<span class="st">'data/v_dem_elec_democracy.csv'</span>)</span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>vdem_data<span class="op">=</span>vdem_data.query(<span class="st">'Year==2022'</span>)</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>low_dem<span class="op">=</span>vdem_data[vdem_data[<span class="st">'electdem_vdem_owid'</span>]<span class="op">&lt;</span><span class="fl">0.4</span>][<span class="st">'Entity'</span>].tolist()</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>high_dem<span class="op">=</span>vdem_data[vdem_data[<span class="st">'electdem_vdem_owid'</span>]<span class="op">&gt;</span><span class="fl">0.8</span>][<span class="st">'Entity'</span>].tolist()</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------Hemispheres------------------------------------</span></span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a><span class="co">#north_hem=['Algeria', 'Benin', 'Burkina Faso', 'Burundi', 'Cameroon', 'Central African Republic', 'Chad', 'Comoros', 'Djibouti', 'Egypt', 'Equatorial Guinea', 'Eritrea', 'Ethiopia', 'Gabon', 'Gambia', 'Ghana', 'Guinea', 'Guinea-Bissau', 'Ivory Coast', 'Kenya', 'Liberia', 'Libya', 'Mali', 'Mauritania', 'Niger', 'Nigeria', 'Rwanda', 'Senegal', 'Sierra Leone', 'Somalia', 'South Sudan', 'Sudan', 'Tanzania', 'Togo', 'Tunisia', 'Uganda', 'Zambia', 'Zimbabwe', 'Afghanistan', 'Armenia', 'Azerbaijan', 'Bahrain', 'Bangladesh', 'Bhutan', 'Brunei', 'Cambodia', 'China', 'Cyprus', 'Georgia', 'India', 'Indonesia', 'Iran', 'Iraq', 'Israel', 'Japan', 'Jordan', 'Kazakhstan', 'Kuwait', 'Kyrgyzstan', 'Laos', 'Lebanon', 'Malaysia', 'Maldives', 'Mongolia', 'Myanmar', 'Nepal', 'North Korea', 'Oman', 'Pakistan', 'Palestine', 'Philippines', 'Qatar', 'Russia', 'Saudi Arabia', 'Singapore', 'South Korea', 'Sri Lanka', 'Syria', 'Taiwan', 'Tajikistan', 'Thailand', 'Turkey', 'Turkmenistan', 'United Arab Emirates', 'Uzbekistan', 'Vietnam', 'Albania', 'Andorra', 'Austria', 'Belarus', 'Belgium', 'Bosnia and Herzegovina', 'Bulgaria', 'Croatia', 'Czech Republic', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland', 'Italy', 'Latvia', 'Liechtenstein', 'Lithuania', 'Luxembourg', 'Macedonia', 'Malta', 'Moldova', 'Monaco', 'Montenegro', 'Netherlands', 'North Macedonia', 'Norway', 'Poland', 'Portugal', 'Romania', 'San Marino', 'Serbia', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'Switzerland', 'Vatican City', 'Antigua and Barbuda', 'Bahamas', 'Barbados', 'Belize', 'Canada', 'Costa Rica', 'Cuba', 'Dominica', 'Dominican Republic', 'El Salvador', 'Grenada', 'Guatemala', 'Haiti', 'Honduras', 'Jamaica', 'Mexico', 'Nicaragua', 'Panama', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Trinidad and Tobago', 'United States of America', 'Oceania', 'Fiji', 'Kiribati', 'Marshall Islands', 'Micronesia', 'Nauru', 'New Zealand', 'Palau', 'Papua New Guinea', 'Samoa', 'Solomon Islands', 'Tonga', 'Tuvalu', 'Vanuatu']</span></span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>countries<span class="op">=</span>pd.read_csv(<span class="st">'data/countries.csv'</span>,encoding<span class="op">=</span><span class="st">'latin-1'</span>)</span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>north_hem<span class="op">=</span>countries[countries[<span class="st">'latitude'</span>]<span class="op">&gt;</span><span class="dv">0</span>][<span class="st">'name'</span>].tolist()</span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>south_hem<span class="op">=</span>countries[countries[<span class="st">'latitude'</span>]<span class="op">&lt;</span><span class="dv">0</span>][<span class="st">'name'</span>].tolist()</span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------Gender quotas------------------------------------</span></span>
+<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a>quotas_df<span class="op">=</span>pd.read_csv(<span class="st">'data/gender_quotas.csv'</span>)</span>
+<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a>legal_quotas<span class="op">=</span>quotas_df[quotas_df[<span class="st">'Voluntary political party quotas'</span>]<span class="op">==</span><span class="st">'No'</span>][<span class="st">'Country'</span>].tolist()</span>
+<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a><span class="co"># Gender inequality index (GII)</span></span>
+<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a>top_gii<span class="op">=</span>df.query(<span class="st">'country in @top_gii'</span>)</span>
+<span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a>bottom_gii<span class="op">=</span>df.query(<span class="st">'country in @bottom_gii'</span>)</span>
+<span id="cb8-53"><a href="#cb8-53" aria-hidden="true" tabindex="-1"></a>top_gii_df<span class="op">=</span>top_gii.groupby(<span class="st">'gender'</span>).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a>bottom_gii_df<span class="op">=</span>bottom_gii.groupby(<span class="st">'gender'</span>).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb8-55"><a href="#cb8-55" aria-hidden="true" tabindex="-1"></a>gender_df<span class="op">=</span>pd.merge(top_gii_df, bottom_gii_df, how<span class="op">=</span><span class="st">'inner'</span>,left_index<span class="op">=</span><span class="va">True</span>,right_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-56"><a href="#cb8-56" aria-hidden="true" tabindex="-1"></a>gender_df.columns<span class="op">=</span>[<span class="st">'top_gii'</span>,<span class="st">'bottom_gii'</span>]</span>
+<span id="cb8-57"><a href="#cb8-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-58"><a href="#cb8-58" aria-hidden="true" tabindex="-1"></a><span class="co"># Add columns for percentage</span></span>
+<span id="cb8-59"><a href="#cb8-59" aria-hidden="true" tabindex="-1"></a>gender_df[<span class="st">'top_gii_pc'</span>]<span class="op">=</span>(gender_df[<span class="st">'top_gii'</span>]<span class="op">/</span>gender_df[<span class="st">'top_gii'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb8-60"><a href="#cb8-60" aria-hidden="true" tabindex="-1"></a>gender_df[<span class="st">'bottom_gii_pc'</span>]<span class="op">=</span>(gender_df[<span class="st">'bottom_gii'</span>]<span class="op">/</span>gender_df[<span class="st">'bottom_gii'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb8-61"><a href="#cb8-61" aria-hidden="true" tabindex="-1"></a><span class="co"># gender_df</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell" data-execution_count="89">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a double bar plot for Gender Inequality Index analysis</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>gii_plot_df<span class="op">=</span>pd.concat([gender_df[[<span class="st">'top_gii_pc'</span>]].rename(columns<span class="op">=</span>{<span class="st">'top_gii_pc'</span>:<span class="st">'percentage'</span>})<span class="op">\</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>                   ,gender_df[[<span class="st">'bottom_gii_pc'</span>]].rename(columns<span class="op">=</span>{<span class="st">'bottom_gii_pc'</span>:<span class="st">'percentage'</span>})],axis<span class="op">=</span><span class="dv">0</span>).reset_index()</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>gii_plot_df[<span class="st">'group'</span>]<span class="op">=</span>[<span class="st">'Highest GII Countries'</span> <span class="cf">if</span> i<span class="op">&lt;</span><span class="dv">2</span> <span class="cf">else</span> <span class="st">'Lowest GII Countries'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">4</span>)]</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>ggplot(gii_plot_df,aes(x<span class="op">=</span><span class="st">'gender'</span>,y<span class="op">=</span><span class="st">'percentage'</span>,fill<span class="op">=</span><span class="st">'group'</span>))<span class="op">\</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, position<span class="op">=</span><span class="st">'dodge'</span>, width<span class="op">=</span><span class="fl">0.7</span>) <span class="op">\</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(x<span class="op">=</span><span class="st">'Gender'</span>, y<span class="op">=</span><span class="st">'Percentage'</span>, title<span class="op">=</span><span class="st">'Highest GII Countries vs Lowest GII Countries'</span>) <span class="op">\</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="gender_files/figure-html/cell-9-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="90">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># HDI</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>high_hdi<span class="op">=</span>df.query(<span class="st">'country in @high_hdi'</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>low_hdi<span class="op">=</span>df.query(<span class="st">'country in @low_hdi'</span>)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>high_hdi_df<span class="op">=</span>high_hdi.groupby(<span class="st">'gender'</span>).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>low_hdi_df<span class="op">=</span>low_hdi.groupby(<span class="st">'gender'</span>).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>gender_df<span class="op">=</span>pd.merge(high_hdi_df, low_hdi_df, how<span class="op">=</span><span class="st">'inner'</span>,left_index<span class="op">=</span><span class="va">True</span>,right_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>gender_df.columns<span class="op">=</span>[<span class="st">'high_hdi'</span>,<span class="st">'low_hdi'</span>]</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Add columns for percentage</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>gender_df[<span class="st">'high_hdi_pc'</span>]<span class="op">=</span>(gender_df[<span class="st">'high_hdi'</span>]<span class="op">/</span>gender_df[<span class="st">'high_hdi'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>gender_df[<span class="st">'low_hdi_pc'</span>]<span class="op">=</span>(gender_df[<span class="st">'low_hdi'</span>]<span class="op">/</span>gender_df[<span class="st">'low_hdi'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="co"># gender_df </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell" data-execution_count="91">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a double bar plot for HDI analysis</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>hdi_plot_df<span class="op">=</span>pd.concat([gender_df[[<span class="st">'high_hdi_pc'</span>]].rename(columns<span class="op">=</span>{<span class="st">'high_hdi_pc'</span>:<span class="st">'percentage'</span>})<span class="op">\</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>                   ,gender_df[[<span class="st">'low_hdi_pc'</span>]].rename(columns<span class="op">=</span>{<span class="st">'low_hdi_pc'</span>:<span class="st">'percentage'</span>})],axis<span class="op">=</span><span class="dv">0</span>).reset_index()</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>hdi_plot_df[<span class="st">'group'</span>]<span class="op">=</span>[<span class="st">'High HDI Countries'</span> <span class="cf">if</span> i<span class="op">&lt;</span><span class="dv">2</span> <span class="cf">else</span> <span class="st">'Low HDI Countries'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">4</span>)]</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co"># hdi_plot_df </span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>ggplot(hdi_plot_df,aes(x<span class="op">=</span><span class="st">'gender'</span>,y<span class="op">=</span><span class="st">'percentage'</span>,fill<span class="op">=</span><span class="st">'group'</span>))<span class="op">\</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, position<span class="op">=</span><span class="st">'dodge'</span>, width<span class="op">=</span><span class="fl">0.7</span>) <span class="op">\</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(x<span class="op">=</span><span class="st">'Gender'</span>, y<span class="op">=</span><span class="st">'Percentage'</span>, title<span class="op">=</span><span class="st">'High HDI Countries vs Low HDI Countries'</span>) <span class="op">\</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="gender_files/figure-html/cell-11-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="92">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># V-Dem</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>high_vdem<span class="op">=</span>df.query(<span class="st">'country in @high_dem'</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>low_vdem<span class="op">=</span>df.query(<span class="st">'country in @low_dem'</span>)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>high_vdem_df<span class="op">=</span>high_vdem.groupby(<span class="st">'gender'</span>).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>low_vdem_df<span class="op">=</span>low_vdem.groupby(<span class="st">'gender'</span>).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>gender_df<span class="op">=</span>pd.merge(high_vdem_df, low_vdem_df, how<span class="op">=</span><span class="st">'inner'</span>,left_index<span class="op">=</span><span class="va">True</span>,right_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>gender_df.columns<span class="op">=</span>[<span class="st">'high_vdem'</span>,<span class="st">'low_vdem'</span>]</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Add columns for percentage</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>gender_df[<span class="st">'high_vdem_pc'</span>]<span class="op">=</span>(gender_df[<span class="st">'high_vdem'</span>]<span class="op">/</span>gender_df[<span class="st">'high_vdem'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>gender_df[<span class="st">'low_vdem_pc'</span>]<span class="op">=</span>(gender_df[<span class="st">'low_vdem'</span>]<span class="op">/</span>gender_df[<span class="st">'low_vdem'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="co"># gender_df </span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a double bar plot for V-DEM analysis</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>vdem_plot_df<span class="op">=</span>pd.concat([gender_df[[<span class="st">'high_vdem_pc'</span>]].rename(columns<span class="op">=</span>{<span class="st">'high_vdem_pc'</span>:<span class="st">'percentage'</span>})<span class="op">\</span></span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>                   ,gender_df[[<span class="st">'low_vdem_pc'</span>]].rename(columns<span class="op">=</span>{<span class="st">'low_vdem_pc'</span>:<span class="st">'percentage'</span>})],axis<span class="op">=</span><span class="dv">0</span>).reset_index()</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>vdem_plot_df[<span class="st">'group'</span>]<span class="op">=</span>[<span class="st">'High V-DEM Countries'</span> <span class="cf">if</span> i<span class="op">&lt;</span><span class="dv">2</span> <span class="cf">else</span> <span class="st">'Low V-DEM Countries'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">4</span>)]</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>ggplot(vdem_plot_df,aes(x<span class="op">=</span><span class="st">'gender'</span>,y<span class="op">=</span><span class="st">'percentage'</span>,fill<span class="op">=</span><span class="st">'group'</span>))<span class="op">\</span></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, position<span class="op">=</span><span class="st">'dodge'</span>, width<span class="op">=</span><span class="fl">0.7</span>) <span class="op">\</span></span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(x<span class="op">=</span><span class="st">'Gender'</span>, y<span class="op">=</span><span class="st">'Percentage'</span>, title<span class="op">=</span><span class="st">'High V-DEM Countries vs Low V-DEM Countries'</span>) <span class="op">\</span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="gender_files/figure-html/cell-12-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="93">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Income Category</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>high_income<span class="op">=</span>df.query(<span class="st">'country in @high_income'</span>)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>low_income<span class="op">=</span>df.query(<span class="st">'country in @low_income'</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>high_income_df<span class="op">=</span>high_income.groupby(<span class="st">'gender'</span>).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>low_income_df<span class="op">=</span>low_income.groupby(<span class="st">'gender'</span>).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>gender_df<span class="op">=</span>pd.merge(high_income_df, low_income_df, how<span class="op">=</span><span class="st">'inner'</span>,left_index<span class="op">=</span><span class="va">True</span>,right_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>gender_df.columns<span class="op">=</span>[<span class="st">'high_income'</span>,<span class="st">'low_income'</span>]</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Add columns for percentage</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>gender_df[<span class="st">'high_income_pc'</span>]<span class="op">=</span>(gender_df[<span class="st">'high_income'</span>]<span class="op">/</span>gender_df[<span class="st">'high_income'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>gender_df[<span class="st">'low_income_pc'</span>]<span class="op">=</span>(gender_df[<span class="st">'low_income'</span>]<span class="op">/</span>gender_df[<span class="st">'low_income'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>gender_df </span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a double bar plot for Income analysis</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>income_plot_df<span class="op">=</span>pd.concat([gender_df[[<span class="st">'high_income_pc'</span>]].rename(columns<span class="op">=</span>{<span class="st">'high_income_pc'</span>:<span class="st">'percentage'</span>})<span class="op">\</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>                   ,gender_df[[<span class="st">'low_income_pc'</span>]].rename(columns<span class="op">=</span>{<span class="st">'low_income_pc'</span>:<span class="st">'percentage'</span>})],axis<span class="op">=</span><span class="dv">0</span>).reset_index()</span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>income_plot_df[<span class="st">'group'</span>]<span class="op">=</span>[<span class="st">'High Income Countries'</span> <span class="cf">if</span> i<span class="op">&lt;</span><span class="dv">2</span> <span class="cf">else</span> <span class="st">'Low Income Countries'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">4</span>)]</span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>ggplot(income_plot_df,aes(x<span class="op">=</span><span class="st">'gender'</span>,y<span class="op">=</span><span class="st">'percentage'</span>,fill<span class="op">=</span><span class="st">'group'</span>))<span class="op">\</span></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, position<span class="op">=</span><span class="st">'dodge'</span>, width<span class="op">=</span><span class="fl">0.7</span>) <span class="op">\</span></span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(x<span class="op">=</span><span class="st">'Gender'</span>, y<span class="op">=</span><span class="st">'Percentage'</span>, title<span class="op">=</span><span class="st">'High Income Countries vs Low Income Countries'</span>) <span class="op">\</span></span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="gender_files/figure-html/cell-13-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="94">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gender Quotas</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>quotas<span class="op">=</span>df.query(<span class="st">'country in @legal_quotas'</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>no_quotas<span class="op">=</span>df.query(<span class="st">'country not in @legal_quotas'</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>quotas_df<span class="op">=</span>quotas.groupby(<span class="st">'gender'</span>).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>no_quotas_df<span class="op">=</span>no_quotas.groupby(<span class="st">'gender'</span>).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>gender_df<span class="op">=</span>pd.merge(quotas_df, no_quotas_df, how<span class="op">=</span><span class="st">'inner'</span>,left_index<span class="op">=</span><span class="va">True</span>,right_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>gender_df.columns<span class="op">=</span>[<span class="st">'quotas'</span>,<span class="st">'no_quotas'</span>]</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Add columns for percentage</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>gender_df[<span class="st">'quotas_pc'</span>]<span class="op">=</span>(gender_df[<span class="st">'quotas'</span>]<span class="op">/</span>gender_df[<span class="st">'quotas'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>gender_df[<span class="st">'no_quotas_pc'</span>]<span class="op">=</span>(gender_df[<span class="st">'no_quotas'</span>]<span class="op">/</span>gender_df[<span class="st">'no_quotas'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co"># gender_df </span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a double bar plot for Quotas analysis</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>income_plot_df<span class="op">=</span>pd.concat([gender_df[[<span class="st">'quotas_pc'</span>]].rename(columns<span class="op">=</span>{<span class="st">'quotas_pc'</span>:<span class="st">'percentage'</span>})<span class="op">\</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>                   ,gender_df[[<span class="st">'no_quotas_pc'</span>]].rename(columns<span class="op">=</span>{<span class="st">'no_quotas_pc'</span>:<span class="st">'percentage'</span>})],axis<span class="op">=</span><span class="dv">0</span>).reset_index()</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>income_plot_df[<span class="st">'group'</span>]<span class="op">=</span>[<span class="st">'Countries with Quotas'</span> <span class="cf">if</span> i<span class="op">&lt;</span><span class="dv">2</span> <span class="cf">else</span> <span class="st">'Countries without Quotas'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">4</span>)]</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>ggplot(income_plot_df,aes(x<span class="op">=</span><span class="st">'gender'</span>,y<span class="op">=</span><span class="st">'percentage'</span>,fill<span class="op">=</span><span class="st">'group'</span>))<span class="op">\</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, position<span class="op">=</span><span class="st">'dodge'</span>, width<span class="op">=</span><span class="fl">0.7</span>) <span class="op">\</span></span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> labs(x<span class="op">=</span><span class="st">'Gender'</span>, y<span class="op">=</span><span class="st">'Percentage'</span>, title<span class="op">=</span><span class="st">'Countries with Quotas vs Countries without Quotas'</span>) <span class="op">\</span></span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="gender_files/figure-html/cell-14-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
