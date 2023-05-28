@@ -191,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>Investigating disparities in gender amongst politicians in different country groups is interesting. There are many underlying, systematic biases which result in a lack of female representation in certain industries and roles. We explore gender disparities in politics below.</p>
+<p>Investigating disparities in gender is important to this research question. There are many underlying, systematic biases which result in a lack of female representation in certain industries and roles. We explore gender disparities in politics below.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -221,11 +221,11 @@ Gender split across all countries
 <p><img src="gender_files/figure-html/cell-3-output-1.png" class="img-fluid"></p>
 </div>
 </div>
-<pre><code>This split is far from equal or proportional to population demographics</code></pre>
+<pre><code>This figure is alarming!</code></pre>
 <h4 class="anchored">
 G7 Country wise data
 </h4>
-<p>We now group countries by certain characteristics, to try and identify whether some kinds of countries have more unequal splits than others.</p>
+<p>We now break down the above data by country and development to understand specific data trends within and across different countries of different development</p>
 <div class="cell" data-execution_count="84">
 <details>
 <summary>Code</summary>
@@ -253,7 +253,7 @@ G7 Country wise data
 The gender gap in political representation is relatively robust to different groupings based on HDI, MYS or other development indicators. It certainly showcases a heavily positive correlation between being a politician and being male. This can be backed up by historical and cultural norms, gender roles, structural barriers, and gender biases in the electorate. These factors play into limiting women’s access to political opportunities thereby discouraging participation in politics.
 </p>
 <p>
-As we would hypothesise, the disparity between becoming a politician given being male versus female is significantly more apparent for highly gender-unequal countries. This is shown most clearly by the percentage difference between being a politician given you are female for the highest Gender Inequality Index countries when compared to the lowest ones. So while the average split globally for gender representation is 22.2% female and 77.8% male, for the lowest GII countries it is 11.08% and 88.92%. However, gender split does not seem to be highly correlated to other development indicators such as income, MYS or HDI as shown in the graphs below. Due to the small variations in gender split observed between high/low non-gender focused indicators (MYS, HDI, V-DEM and income), we feel that this could be partially due to the lower data quality present in the EveryPolitician dataset for some of the less developed countries - perhaps further exploration by a future DS105 team would be interesting, focusing in on gender splits in less developed countries through another dataset.
+Although this result is intuitive it is worthwhile considering that the disparity between being a politician given you are male versus female is significantly more apparent for highly gender-unequal countries. This is shown most clearly by the percentage difference between being a politician given you are female for the highest Gender Inequality Index countries when compared to the lowest ones. So while the average split globally for gender representation is 22.2% female and 77.8% male, for the lowest GII countries it is 11.08% and 88.92%. This difference is not as pronounced for other development indicators such as income and HDI as visualised in the graphs. This is unsurprising considering the construction of the HDI index and mean income is by nature focused more on overall economic factors whereas the GII is more suited to measuring gender disparities and biases.Moreover this explains why some countries like Rwanda that are classified as low development countries with an index of 0.543 actually have high political representation as accounted for by the low ‘Gender Inequality’ value of 0.338.
 </p>
 <h4 class="anchored">
 UK only data
@@ -281,6 +281,57 @@ UK only data
 <div class="cell-output cell-output-display">
 <p><img src="gender_files/figure-html/cell-5-output-1.png" class="img-fluid"></p>
 </div>
+</div>
+<h4 class="anchored">
+Top Highest HDI Countries
+</h4>
+<div class="cell" data-execution_count="86">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Top 5 Highest HDI countries</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>Top_5_HDI_countries<span class="op">=</span>[<span class="st">'Switzerland'</span>,<span class="st">'Norway'</span>,<span class="st">'Iceland'</span>,<span class="st">'Hong Kong'</span>,<span class="st">'Australia'</span>]</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>H_HDI_df<span class="op">=</span>df[df[<span class="st">'country'</span>].isin(Top_5_HDI_countries)]</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>H_HDI_df</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>H_HDI_gender_df<span class="op">=</span>H_HDI_df.groupby(H_HDI_df[<span class="st">'gender'</span>]).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>H_HDI_gender_df[<span class="st">'percentage'</span>]<span class="op">=</span>(H_HDI_gender_df[<span class="st">'name'</span>]<span class="op">/</span>H_HDI_gender_df[<span class="st">'name'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>H_HDI_gender_df.rename(columns<span class="op">=</span>{<span class="st">'name'</span>:<span class="st">'count'</span>},inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>H_HDI_gender_df.reset_index(inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co"># H_HDI_gender_df </span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>ggplot(H_HDI_gender_df, aes(x<span class="op">=</span><span class="st">'gender'</span>, y<span class="op">=</span><span class="st">'percentage'</span>, fill<span class="op">=</span><span class="st">'gender'</span>))<span class="op">\</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, position<span class="op">=</span><span class="st">'dodge'</span>, width<span class="op">=</span><span class="fl">0.7</span>)<span class="op">\</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_text(aes(label<span class="op">=</span><span class="st">'percentage'</span>), position<span class="op">=</span>position_dodge(width<span class="op">=</span><span class="fl">0.7</span>), va<span class="op">=</span><span class="st">'bottom'</span>)<span class="op">\</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> labs(title<span class="op">=</span><span class="st">'Gender Split across Top 5 HDI Countries'</span>)<span class="op">\</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">5</span>,))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="gender_files/figure-html/cell-6-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<h4 class="anchored">
+Top Lowest HDI countries
+</h4>
+<div class="cell" data-execution_count="87">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Top 5 lowest HDI countries</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>Top_5_Lowest_HDI_countries<span class="op">=</span>[<span class="st">'South Sudan'</span>,<span class="st">'Chad'</span>,<span class="st">'Niger'</span>,<span class="st">'Central African Republic'</span>,<span class="st">'Burundi'</span>]</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>L_HDI_df<span class="op">=</span>df[df[<span class="st">'country'</span>].isin(Top_5_Lowest_HDI_countries)]</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>L_HDI_df</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>L_HDI_gender_df<span class="op">=</span>L_HDI_df.groupby(L_HDI_df[<span class="st">'gender'</span>]).count()[[<span class="st">'name'</span>]]</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>L_HDI_gender_df[<span class="st">'percentage'</span>]<span class="op">=</span>(L_HDI_gender_df[<span class="st">'name'</span>]<span class="op">/</span>L_HDI_gender_df[<span class="st">'name'</span>].<span class="bu">sum</span>()<span class="op">*</span><span class="dv">100</span>).<span class="bu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>L_HDI_gender_df.rename(columns<span class="op">=</span>{<span class="st">'name'</span>:<span class="st">'count'</span>},inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>L_HDI_gender_df.reset_index(inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co"># L_HDI_gender_df </span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>ggplot(L_HDI_gender_df, aes(x<span class="op">=</span><span class="st">'gender'</span>, y<span class="op">=</span><span class="st">'percentage'</span>, fill<span class="op">=</span><span class="st">'gender'</span>))<span class="op">\</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">'identity'</span>, position<span class="op">=</span><span class="st">'dodge'</span>, width<span class="op">=</span><span class="fl">0.7</span>)<span class="op">\</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> geom_text(aes(label<span class="op">=</span><span class="st">'percentage'</span>), position<span class="op">=</span>position_dodge(width<span class="op">=</span><span class="fl">0.7</span>), va<span class="op">=</span><span class="st">'bottom'</span>)<span class="op">\</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> labs(title<span class="op">=</span><span class="st">'Gender Split across Bottom 5 HDI Countries'</span>)<span class="op">\</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">5</span>,))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="gender_files/figure-html/cell-7-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="88">
