@@ -218,10 +218,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>sns.set_theme(<span class="st">"talk"</span>, <span class="st">"whitegrid"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>Following the limitations of the EveryPolitician dataset, we now conduct a focused analysis of current UK MPs.</p>
+<p>Given the limitations of the EveryPolitician dataset, we now conduct a focused analysis of current UK MPs using a newly-constructed dataset.</p>
 <p>
-This allows us to consider the effect of additional factors on political representation, such as university and age.</p>
-<p>We use scraping to obtain data on current UK MPs from Wikipedia.</p>
+This allows us to consider the effect of additional factors on political representation, such as university attended and age, that the EveryPolitican dataset does not include or allow for.</p>
+<p>We use a mix of course methods to obtain data on current UK MPs from Wikipedia, harnessing their API as well as using web scraping skills to extract the relevant pieces of information from the respective pages of each MP.</p>
 
 <h3 style="color:DarkCyan;" class="anchored">
 Using the Wikipedia API
@@ -626,10 +626,10 @@ UK Politicians' Birth Month
 </div>
 </div>
 <p>
-Looking at Figure 2, we observe that the trends we saw in politicians being born in the first six months, don't necessarily hold here.
+We observe that the trends we saw in politicians being born in the first six months, don't seem to hold here.
 </p>
 <p>
-Although people born in March and April (i.e. initial months in the year) are relatively higher than the rest, so are results for being born in September and August serving as a counterexample for a clear generalizable trend. However considering that the schooling system in Britain starts from September the earlier explanation of the relative age effect might still be at play. Specifically, the advantage of being born earlier in terms of maturity and development might improve the likelihood of future opportunities such as pursuing a career in politics, explaining why a much higher percentage of politicians, 9.51 and 9.35, are born in August and September respectively. However, this is conflicting considering that the results are similar for March and April, 9.19 and 9.03 where the same reasoning doesn't hold. Overall, these results may not be significant due to the smaller numbers involved.
+Although people born in March and April (i.e. initial months in the year) are relatively higher than the rest, so are results for being born in September and August making it difficult to identify a clear generalizable trend. However considering that the schooling system in Britain starts from September the earlier explanation of a relative age effect might be relevant. Specifically, the advantage of being born earlier in terms of maturity and development compared to peers in a year group might improve the likelihood of future opportunities such as pursuing a career in politics, potentially contributing to the high percentage of politicians, 9.51 and 9.35, are born in August and September respectively. However, we also observe similar results for March and April, 9.19 and 9.03, so perhaps there are other drivers at play that we have not considered.
 </p>
 <h4 class="anchored">
 University
@@ -776,7 +776,7 @@ What university did most politicians attend in the UK?
 </div>
 <p><img src="uk_files/top_unis.png" class="img-fluid"></p>
 <p>
-As we can tell from Figure 4, there is a clear indication of the most frequently attended university of UK politicians - University of Oxford.
+There is a clear indication of the most frequently attended university of UK politicians - University of Oxford.
 </p>
 <pre><code>76 UK MPs attended Oxford. </code></pre>
 <p>
@@ -784,7 +784,6 @@ Other universities are not even close to competing with Oxford, not even LSE!
 </p>
 <p>
 This might be explained by the extensive political networks, influential alumni, and enhanced perceived competence gained from attending prestigious universities like Oxford, Cambridge, or LSE which positively influence the likelihood of becoming a politician.
-A Times Higher article based on testimonials of students from prestigious universities validates this stating how top-ranked universities tend to have stronger alumni networks as well as higher perceived degree value improving job prospects.
 </p>
 <p>A particularly surprising finding in this plot though is that many top London universities are absent from the top (e.g. King's College, UCL) while many less prestigious regional universities (e.g. Exeter, Birmingham) find their way into the top 10. Some possible explanations could be the geographical nature of the UK SMDP electoral system, the higher prevalence of international students in London universities, and the fact that the ruling Conservative party is more popular in other regions than in London.
 <div class="cell" data-execution_count="65">
@@ -817,7 +816,7 @@ Oxbridge percentage: 24.1%
 LSE percentage: 3.75%</code></pre>
 </div>
 </div>
-<p>Oxbridge universities clearly dominate the politician alma mater.</p>
+<p>Oxbridge clearly dominates.</p>
 <p>Nevertheless, we have shown that a significant propotion of politicians have attended elite universities, it is now the job of the economists and political scientits to determine how significant of a problem this is for the governing of the state!</p>
 
 

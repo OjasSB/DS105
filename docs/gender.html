@@ -191,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>Investigating disparities in gender is important to this research question. There are many underlying, systematic biases which result in a lack of female representation in certain industries and roles. We explore gender disparities in politics below.</p>
+<p>Investigating disparities in gender amongst politicians in different country groups is interesting. There are many underlying, systematic biases which result in a lack of female representation in certain industries and roles. We explore gender disparities in politics below.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -221,11 +221,11 @@ Gender split across all countries
 <p><img src="gender_files/figure-html/cell-3-output-1.png" class="img-fluid"></p>
 </div>
 </div>
-<pre><code>This figure is alarming!</code></pre>
+<pre><code>This split is far from equal or proportional to population demographics</code></pre>
 <h4 class="anchored">
 G7 Country wise data
 </h4>
-<p>We now break down the above data by country and development to understand specific data trends within and across different countries of different development</p>
+<p>We now group countries by certain characteristics, to try and identify whether some kinds of countries have more unequal splits than others.</p>
 <div class="cell" data-execution_count="84">
 <details>
 <summary>Code</summary>
@@ -253,7 +253,7 @@ G7 Country wise data
 The gender gap in political representation is relatively robust to different groupings based on HDI, MYS or other development indicators. It certainly showcases a heavily positive correlation between being a politician and being male. This can be backed up by historical and cultural norms, gender roles, structural barriers, and gender biases in the electorate. These factors play into limiting women’s access to political opportunities thereby discouraging participation in politics.
 </p>
 <p>
-Although this result is intuitive it is worthwhile considering that the disparity between being a politician given you are male versus female is significantly more apparent for highly gender-unequal countries. This is shown most clearly by the percentage difference between being a politician given you are female for the highest Gender Inequality Index countries when compared to the lowest ones. So while the average split globally for gender representation is 22.2% female and 77.8% male, for the lowest GII countries it is 11.08% and 88.92%. This difference is not as pronounced for other development indicators such as income and HDI as visualised in the graphs. This is unsurprising considering the construction of the HDI index and mean income is by nature focused more on overall economic factors whereas the GII is more suited to measuring gender disparities and biases.Moreover this explains why some countries like Rwanda that are classified as low development countries with an index of 0.543 actually have high political representation as accounted for by the low ‘Gender Inequality’ value of 0.338.
+As we would hypothesise, the disparity between becoming a politician given being male versus female is significantly more apparent for highly gender-unequal countries. This is shown most clearly by the percentage difference between being a politician given you are female for the highest Gender Inequality Index countries when compared to the lowest ones. So while the average split globally for gender representation is 22.2% female and 77.8% male, for the lowest GII countries it is 11.08% and 88.92%. This gender split does not seem to be highly correlated to other development indicators such as income and HDI as visualised in the graphs. Due to the small variations in gender split observed between high/low non-gender focused indicators, we feel that this could be accounted to the lower data quality present in the EveryPolitician dataset for some of the less developed countries - perhaps further exploration by a future DS105 team would be interesting, focusing in on gender splits in less developed countries through another dataset.
 </p>
 <h4 class="anchored">
 UK only data
