@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>DataDemocrats - Exploring University</title>
+<title>DataDemocrats - Exploring the UK</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -144,7 +144,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li>
     <a class="dropdown-item" href="./uk-analysis1.html" rel="" target="">
- <span class="dropdown-text">Exploring University</span></a>
+ <span class="dropdown-text">Exploring the UK</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./gender.html" rel="" target="">
@@ -176,7 +176,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#wales" id="toc-wales" class="nav-link active" data-scroll-target="#wales">Wales</a></li>
+  <li><a href="#england" id="toc-england" class="nav-link active" data-scroll-target="#england">England</a></li>
+  <li><a href="#wales" id="toc-wales" class="nav-link" data-scroll-target="#wales">Wales</a></li>
   <li><a href="#scotland" id="toc-scotland" class="nav-link" data-scroll-target="#scotland">Scotland</a></li>
   <li><a href="#northern-ireland" id="toc-northern-ireland" class="nav-link" data-scroll-target="#northern-ireland">Northern Ireland</a></li>
   <li><a href="#extracting-information-for-uk-focused-analysis" id="toc-extracting-information-for-uk-focused-analysis" class="nav-link" data-scroll-target="#extracting-information-for-uk-focused-analysis">Extracting information for UK-focused analysis</a></li>
@@ -189,7 +190,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Exploring University</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Exploring the UK</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
 </div>
 
 
@@ -217,59 +218,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>sns.set_theme(<span class="st">"talk"</span>, <span class="st">"whitegrid"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>We now want to explore how the university the indivdual went to may affect their chances of becoming a politican.</p>
+<p>Following the limitations of the EveryPolitician dataset, we now conduct a focused analysis of current UK MPs.</p>
 <p>
-We wanted to explore different paths that affect an individual’s chance of becoming a politician as such there may be a selection bias that those who went to a particular university are more likley to become politicians.
-</p>
-<p>
-This also could have certain implications for policy-makers - to increase the quantity and quality of politicians.
-</p>
-However, we found some issues in trying to compare our population data and the universities they attened. For example, many developing countries had incomplete and messy data, meaning that we could not compare education across countries. This is highlighted in the table below:<br>
+This allows us to consider the effect of additional factors on political representation, such as university and age.</p>
+<p>We use scraping to obtain data on current UK MPs from Wikipedia.</p>
 
-
-<table border="1">
-<caption>
-Comparing Data Types with UK and a developing country
-</caption>
-<tbody><tr>
-<td>
-Row 1, col 1 item
-</td>
-<td>
-Row 1, col 2 item
-</td>
-<td>
-Row 1, col 3 item
-</td>
-</tr>
-<tr>
-<td>
-Row 2, col 1 item
-</td>
-<td>
-Row 2, col 2 item
-</td>
-<td>
-Row 2, col 3 item
-</td>
-</tr>
-
-</tbody></table>
-<p>There was a clear trend between going to Oxbridge and being a politician in the UK which is validated by the university and number of MP’s percentage table.</p>
-<p>
-On this page we show a visualisation of the table exhibits how two to three times more MP’s attend Oxford and Cambridge than other top 10 universities. A substantially high number of politicians also attend LSE.
-</p>
-<p>
-This might be explained by the extensive political networks, influential alumni, and enhanced perceived competence gained from attending prestigious universities like Oxford, Cambridge, or LSE which positively influence the likelihood of becoming a politician.
-</p>
-<p>
-A Times Higher article based on testimonials of students from prestigious universities validates this stating how top-ranked universities tend to have stronger alumni networks as well as higher perceived degree value improving job prospects.
-</p>
 <h3 style="color:DarkCyan;" class="anchored">
 Using the Wikipedia API
 </h3>
+<p>Since the UK is split into four countries, and Wikipedia has four separate pages for these, we use the Wikipedia API to retrieve a list of the current MPs sitting in each constituency of England, Wales, Scotland, and Northern Ireland separately.</p>
+<h3 class="anchored" data-anchor-id="england">England</h3>
 <p>
-By using the Wikipedia API, we scraped the html for the page that lists the current sitting England MP’s
+First we scraped the HTML for the page that lists the current sitting England MPs.
 </p>
 <div class="cell" data-execution_count="27">
 <details>
@@ -318,7 +278,7 @@ By using the Wikipedia API, we scraped the html for the page that lists the curr
 <span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="co"># I encounter an issue here - there is one too few MP for England (532 instead of 533)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>Since the UK is split into three countries, hence three different constinuencies, we use the Wikipedia API to retrieve a list of the current MP’s sitting in each constinuency; Wales, Scotland, Northern Ireland.</p>
+<pre><code>532</code></pre>
 <section id="wales" class="level3">
 <h3 class="anchored" data-anchor-id="wales">Wales</h3>
 <p>The number of MPs for constituencies in Wales</p>
@@ -350,7 +310,7 @@ By using the Wikipedia API, we scraped the html for the page that lists the curr
 </section>
 <section id="scotland" class="level3">
 <h3 class="anchored" data-anchor-id="scotland">Scotland</h3>
-<p>The number of MP’s for constituencies in Scotland</p>
+<p>The number of MPs for constituencies in Scotland</p>
 <div class="cell" data-execution_count="29">
 <details>
 <summary>Code</summary>
@@ -379,7 +339,7 @@ By using the Wikipedia API, we scraped the html for the page that lists the curr
 </section>
 <section id="northern-ireland" class="level3">
 <h3 class="anchored" data-anchor-id="northern-ireland">Northern Ireland</h3>
-<p>The number of MPs for constituencies in Northern Island</p>
+<p>The number of MPs for constituencies in Northern Ireland</p>
 <div class="cell" data-execution_count="30">
 <details>
 <summary>Code</summary>
@@ -440,8 +400,8 @@ We investigate the missing MP by using TheyWorkForYou’s database of sitting MP
 <span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="co"># I will add her to the list of links manually, but add a check in case she is added to the Wikipedia list in the future</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>By using the ‘regex’ package we can see which name is missing from the list of 649 MP’s</p>
-<p>Given the nature of some names (eg. Jon Ashworth vs Jonathan Ashworth) we needed to find the missing MP by hand from this list of 23 anomalies identified by regex search</p>
+<p>By using the ‘regex’ package we compare the lists to see which name is missing from the list of 649 MPs</p>
+<p>Given the nature of some names (eg. Jon Ashworth vs Jonathan Ashworth) we needed to find the missing MP manually from the list of 23 anomalies identified by regex search</p>
 <div class="cell" data-execution_count="43">
 <details>
 <summary>Code</summary>
@@ -561,9 +521,9 @@ After extracting the information we wanted for our UK focused analysis, we const
 </section>
 <section id="uk-data-visualisations-and-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="uk-data-visualisations-and-analysis">UK Data Visualisations and Analysis</h3>
-<p>•&nbsp;Clearly we have some missing values for university (problems with the wikipedia page not containing this information) therefore births analysis will be limited to MPs for whom birth data is available.</p>
-<p>• University analysis will be limited to university-attendees where data is available so 570 out of the 650</p>
-<p>• We use UN data for UK comparison</p>
+<p>•&nbsp;We have some missing values for birth date (problems with the Wikipedia page not containing this information) therefore births analysis will be limited to MPs for whom birth data is available.</p>
+<p>• University analysis will be limited to university-attendees where data is available: 570 out of 650</p>
+<p>• We use UN births data for UK comparison</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -617,6 +577,7 @@ Age Distribution of UK MPs
 <span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> scale_x_continuous(breaks<span class="op">=</span><span class="bu">range</span>(<span class="dv">0</span>,<span class="dv">100</span>,<span class="dv">5</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
+<p><img src="age_uk.png" class="img-fluid"></p>
 <div class="cell" data-execution_count="72">
 <details>
 <summary>Code</summary>
@@ -627,13 +588,10 @@ Age Distribution of UK MPs
 </div>
 </div>
 <p>
-We would expect most MPs to be in this age interval.
-</p>
-<p>
-As expected, age follows a normal distribution with a mean centred around 53.3
+As shown in the plot, age follows an approximately normal distribution with a mean centred around 53.3
 </p>
 <h4 class="anchored">
-UK Politician’s Birth Month
+UK Politicians' Birth Month
 </h4>
 <div class="cell" data-execution_count="62">
 <details>
@@ -646,9 +604,10 @@ UK Politician’s Birth Month
 <span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> theme(figure_size<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">5</span>), legend_position<span class="op">=</span><span class="st">'none'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="uk-analysis1_files/figure-html/cell-15-output-1.png" class="img-fluid"></p>
+<p><img src="uk_month.png" class="img-fluid"></p>
 </div>
 </div>
+
 <div class="cell" data-execution_count="63">
 <details>
 <summary>Code</summary>
@@ -663,14 +622,14 @@ UK Politician’s Birth Month
 <span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">+</span> scale_fill_manual(values<span class="op">=</span>[<span class="st">'blue'</span>,<span class="st">'green'</span>]) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
-<p><img src="uk-analysis1_files/figure-html/cell-16-output-1.png" class="img-fluid"></p>
+<p><img src="uk_pc_diff.png" class="img-fluid"></p>
 </div>
 </div>
 <p>
-Looking at Figure 2, we observe that the trends we saw in politicians being born in the first six months, don’t necessarily hild here.
+Looking at Figure 2, we observe that the trends we saw in politicians being born in the first six months, don't necessarily hold here.
 </p>
 <p>
-Although people born in March and April i.e initial months in the year are relatively higher than the rest, so are results for being born in September and August serving as a counterexample for a clear generalizable trend. However considering that the schooling system in Britain starts from September the earlier explanation of the relative age effect might still be at play. Specifically, the advantage of being born earlier in terms of maturity and development might improve the likelihood of future opportunities such as pursuing a career in politics, explaining why a much higher percentage of politicians 9.51 and 9.35 are born in August and September respectively. However, this is conflicting considering that the results are similar for March and April, 9.19 and 9.03 where the same reasoning doesn’t hold.
+Although people born in March and April (i.e. initial months in the year) are relatively higher than the rest, so are results for being born in September and August serving as a counterexample for a clear generalizable trend. However considering that the schooling system in Britain starts from September the earlier explanation of the relative age effect might still be at play. Specifically, the advantage of being born earlier in terms of maturity and development might improve the likelihood of future opportunities such as pursuing a career in politics, explaining why a much higher percentage of politicians, 9.51 and 9.35, are born in August and September respectively. However, this is conflicting considering that the results are similar for March and April, 9.19 and 9.03 where the same reasoning doesn't hold. Overall, these results may not be significant due to the smaller numbers involved.
 </p>
 <h4 class="anchored">
 University
@@ -815,13 +774,19 @@ What university did most politicians attend in the UK?
 <span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
+<p><img src="top_unis.png" class="img-fluid"></p>
 <p>
 As we can tell from Figure 4, there is a clear indication of the most frequently attended university of UK politicians - University of Oxford.
 </p>
-<pre><code>    76 UK MPs attended Oxford. </code></pre>
+<pre><code>76 UK MPs attended Oxford. </code></pre>
 <p>
 Other universities are not even close to competing with Oxford, not even LSE!
 </p>
+<p>
+This might be explained by the extensive political networks, influential alumni, and enhanced perceived competence gained from attending prestigious universities like Oxford, Cambridge, or LSE which positively influence the likelihood of becoming a politician.
+A Times Higher article based on testimonials of students from prestigious universities validates this stating how top-ranked universities tend to have stronger alumni networks as well as higher perceived degree value improving job prospects.
+</p>
+<p>A particularly surprising finding in this plot though is that many top London universities are absent from the top (e.g. King's College, UCL) while many less prestigious regional universities (e.g. Exeter, Birmingham) find their way into the top 10. Some possible explanations could be the geographical nature of the UK SMDP electoral system, the higher prevalence of international students in London universities, and the fact that the ruling Conservative party is more popular in other regions than in London.
 <div class="cell" data-execution_count="65">
 <details>
 <summary>Code</summary>
@@ -844,9 +809,7 @@ Other universities are not even close to competing with Oxford, not even LSE!
 <span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'LSE percentage: '</span> <span class="op">+</span> <span class="bu">str</span>(lse_percentage) <span class="op">+</span> <span class="st">'%'</span>) </span>
 <span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display">
-<p><img src="uk-analysis1_files/figure-html/cell-19-output-1.png" class="img-fluid"></p>
-</div>
+
 <div class="cell-output cell-output-stdout">
 <pre><code>Oxford percentage: 14.99%
 Cambridge percentage: 9.07%
@@ -854,7 +817,7 @@ Oxbridge percentage: 24.1%
 LSE percentage: 3.75%</code></pre>
 </div>
 </div>
-<p>Oxbridge have clearly dominated the politician alma mater. Is there something else at play here?</p>
+<p>Oxbridge universities clearly dominate the politician alma mater.</p>
 <p>Nevertheless, we have shown that a significant propotion of politicians have attended elite universities, it is now the job of the economists and political scientits to determine how significant of a problem this is for the governing of the state!</p>
 
 
