@@ -29,3 +29,14 @@ Ojas S. B., Uttarayan D., Isha P., Manya G.
 
 ---
 
+### Team Contributions:
+
+Ojas: Data Collection (EveryPolitician), Data pre-processing (Fixing January Skew), Birth Month analysis, Zodiac analysis, Data visualisations, Country groupings for Month and Gender, Supplementary Analysis (Name characteristics, Moon phase, Datewise).
+
+Uttarayan: Data Collection (Wikipedia), Data pre-processing (Validation of UK data), Gender analysis, UK universities and age analysis, Data visualisations.
+
+Isha: Website development in Quarto
+
+Manya: Website text
+
+---
