@@ -7,8 +7,14 @@ Ojas S. B., Uttarayan D., Isha P., Manya G.
 
 ---
 
+### Project website 🌐:
+
+[DataDemocrats - Exploring biographical factors affecting political representation](https://ojassb.github.io/DS105)
+
+---
+
 ### Data Sources 📁:
-- http://everypolitician.org/
+- [EveryPolitician](http://everypolitician.org/)
 - Wikipedia (for UK analysis)
 
 ---
@@ -31,7 +37,7 @@ Ojas S. B., Uttarayan D., Isha P., Manya G.
 
 ### Team Contributions:
 
-Ojas: Data Collection (EveryPolitician), Data pre-processing (Fixing January Skew), Birth Month analysis, Zodiac analysis, Data visualisations, Country groupings for Month and Gender, Supplementary Analysis (Name characteristics, Moon phase, Datewise), website text.
+Ojas: Data Collection (EveryPolitician), Data pre-processing (Fixing January Skew), Birth Month analysis, Zodiac analysis, Data visualisations, Country groupings for Month and Gender, Supplementary Analysis (Name characteristics, Moon phase, Datewise), Repository management, website text.
 
 Uttarayan: Data Collection (Wikipedia), Data pre-processing (Cleaning and augmenting UK data), Gender analysis, UK analysis, Data visualisations, website text.
 
