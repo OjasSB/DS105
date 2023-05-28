@@ -1,6 +1,0 @@
----
-title: "Abstract"
-
----
-
-##### What our project entails
