@@ -115,3 +115,16 @@ Response: pc_diff
             Df Sum Sq Mean Sq F value  Pr(>F)  
 month_name  11   4249  386.30   1.897 0.03858 *
 Residuals  353  71884  203.64
+
+
+Regression on sin(pi/6.5*month number)
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.06833    0.62478   0.109 0.915072    
+sin          4.56495    0.84891   5.377 0.000311 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.164 on 10 degrees of freedom
+Multiple R-squared:  0.743,	Adjusted R-squared:  0.7173 
+F-statistic: 28.92 on 1 and 10 DF,  p-value: 0.0003112
